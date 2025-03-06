@@ -16,7 +16,7 @@ Antes de ejecutar las pruebas, asegúrate de tener instalado:
 Clona el repositorio y luego instala las dependencias:
 
 ```sh
-git clone https://github.com/tu_usuario/https://github.com/rtorrado80ing/RobotFramework.git
+git clone https://github.com/rtorrado80ing/RobotFramework.git
 cd tu_repositorio
 pip install -r requirements.txt
 ```
