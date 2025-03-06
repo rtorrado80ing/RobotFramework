@@ -88,7 +88,7 @@ start results/report.html
 
 ### 💡 Autor
 📌 _Ricardo Torrado_  
-📌 _[Tu GitHub](https://github.com/tu_usuario)_  
+📌 _[Tu GitHub](https://github.com/rtorrado80ing)_  
 
 ---
 
