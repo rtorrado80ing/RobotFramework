@@ -19,6 +19,9 @@ Clona el repositorio y luego instala las dependencias:
 git clone https://github.com/rtorrado80ing/RobotFramework.git
 cd tu_repositorio
 pip install -r requirements.txt
+
+${EXECDIR}=/repo/testdata/execution
+%{WORKSPACE}=/home/workspace
 ```
 
 Si `requirements.txt` no está disponible, instala manualmente:
