@@ -40,7 +40,6 @@ Mi noveno Test
     click button    //input[@value='cb2']
     Close Browser
     
-
 Mi decimo Test
     [Documentation]     Decima prueba de validacion de slectores
     [Tags]    test_select
