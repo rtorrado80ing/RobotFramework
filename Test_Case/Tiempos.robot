@@ -20,7 +20,14 @@ Mi octavo Test
     Maximize Browser Window
     #Debes esperar hasta .5 segundos
     set selenium speed    .5s
+    #validando un texto en la pagina
+    wait until page contains    Basic HTML Form Example
+    #Validando el titulo de la pagina
     title should be     HTML Form Elements
+    #Validando un elemento en la pagina
+    wait until page contains element    //p[contains(text(),'Submit this simple HTML form will POST your detail')]
+    #Validando si un elemento es element should be visible
+    wait until element is visible    name=username
     select radio button    radioval    rd1
     Close Browser
 
