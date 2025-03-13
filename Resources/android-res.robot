@@ -32,6 +32,7 @@ Open Chat21 Application
     ...    platformName=${platform_name}
     ...    deviceName=${deviceName}
     ...    platformVersion=${platformVersion}
+#    ...    app=/path/to/my.apk
     ...    appPackage=${appPackage}
     ...    appActivity=${appActivity}
     ...    automationName=${automationName}
