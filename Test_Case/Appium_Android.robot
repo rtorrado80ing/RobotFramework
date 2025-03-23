@@ -1,3 +1,12 @@
+#Para correr pruebas en 2 dispositivos/emuladores en paralelo, haz lo siguiente
+#Abre 2 terminales separadas y ejecuta:
+#Para el primer dispositivo (puerto 8201):
+#appium --port 4723 --default-capabilities "{ \"adbPort\":5037, \"systemPort\":8201, \"newCommandTimeout\":0, \"automationName\":\"UiAutomator2\", \"deviceName\":\"emulator-5554\" }"
+#Para el segundo dispositivo (puerto 8202):
+#appium --port 4725 --default-capabilities "{ \"adbPort\":5038, \"systemPort\":8202, \"newCommandTimeout\":0, \"automationName\":\"UiAutomator2\", \"deviceName\":\"emulator-5556\" }"
+#en Mac y ejecuta
+#appium --default-capabilities '{"adbPort":5037,"systemPort":8201,"newCommandTimeout":0,"automationName":"UiAutomator2"}'
+
 *** Settings ***
 Library    AppiumLibrary    run_on_failure=Capture Page Screenshot
 Library    String

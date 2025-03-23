@@ -1,3 +1,5 @@
+#Para hacer pruebas en paralelo
+#appium --port 4723 --default-capabilities '{"wdaLocalPort":8100,"newCommandTimeout":0,"platformName":"iOS","automationName":"XCUITest"}'
 *** Settings ***
 Library    AppiumLibrary     run_on_failure=Capture Page Screenshot
 Library    String

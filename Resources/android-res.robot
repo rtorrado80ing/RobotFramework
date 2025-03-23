@@ -7,6 +7,9 @@ Resource    password.robot
 &{USER1-DETAILS}            email=rtorrado80@gmail.com      password=${PASSWORD}
 &{USER2-DETAILS}            email=rftutorials2@gmail.com    password=${PASSWORD}
 
+#${APPIUM-PORT-DEVICE1}      4723
+#${APPIUM-PORT-DEVICE2}      4725
+
 #*** Application Variables ***
 ${CHAT21-APPLICATION-ID}    chat21.android.demo:id
 
@@ -28,6 +31,8 @@ ${MAIN-PROFILE-TAB}         //android.widget.TextView[@text="PROFILE"]
 *** Keywords ***
 Open Chat21 Application
     [Documentation]    Abre la aplicación en el dispositivo Android
+#    [Arguments]     ${APPIUM-PORT}=${APPIUM-PORT-DEVICE1}
+#    Open Application    http://127.0.0.1:${APPIUM-PORT}/wd/hub
     Open Application    ${appium_host}
     ...    platformName=${platform_name}
     ...    deviceName=${deviceName}
@@ -41,6 +46,12 @@ Open Chat21 Application
     # Verifica si hay alertas de permisos en Android 10+
     ${ALERT}    Run Keyword And Return Status    Wait Until Element Is Visible    ${CONTINUE-BUTTON}    timeout=3s
     Run Keyword If    ${ALERT} == True    Bypass Android 10 Alerts
+
+#Open Chat21 Application On First Device
+#    Open Chat21 Application         ${APPIUM-PORT-DEVICE1}
+#
+#Open Chat21 Application On Second Device
+#    Open Chat21 Application         ${APPIUM-PORT-DEVICE2}
 
 Bypass Android 10 Alerts
     [Documentation]    Maneja alertas de permisos en Android 10+

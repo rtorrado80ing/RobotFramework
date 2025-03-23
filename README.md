@@ -41,9 +41,14 @@ robot -d results tests/
 Ejecutar un caso de prueba específico:
 
 ```sh
-robot -d results tests/test_google.robot
+robot -d results tests/[NTest].robot
 ```
 
+Ejecutar un caso de prueba específico por tag:
+
+```sh
+robot -d results -i [Ntag] tests/test_google.robot
+```
 📌 **Opciones útiles:**
 - `-d results` → Guarda los reportes en la carpeta `results`.
 - `-i etiqueta` → Ejecuta solo pruebas con una etiqueta específica.
