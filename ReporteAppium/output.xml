@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.1 on win32)" generated="2025-03-13T18:09:45.841678" rpa="false" schemaversion="5">
+<suite id="s1" name="Login Android" source="F:\Documentos\WorkspaceRobotFramework\PyCharm\RobotFramework\Test_Case\Login_Android.robot">
+<test id="s1-t1" name="Login" line="6">
+<kw name="Open Chat21 Application" owner="android-res">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>${appium_host}</arg>
+<arg>platformName=${platform_name}</arg>
+<arg>deviceName=${deviceName}</arg>
+<arg>platformVersion=${platformVersion}</arg>
+<arg>appPackage=${appPackage}</arg>
+<arg>appActivity=${appActivity}</arg>
+<arg>automationName=${automationName}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2025-03-13T18:09:46.018258" elapsed="6.072025"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-13T18:09:55.090751" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-13T18:09:52.090455" elapsed="3.000469"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-03-13T18:09:55.517294" level="INFO">xpath criteria: //android.widget.Button[@resource-id="com.android.permissioncontroller:id/continue_button"]</msg>
+<arg>${CONTINUE-BUTTON}</arg>
+<arg>timeout=3s</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-03-13T18:09:55.091495" elapsed="0.425876"/>
+</kw>
+<msg time="2025-03-13T18:09:55.517474" level="INFO">${ALERT} = True</msg>
+<var>${ALERT}</var>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${CONTINUE-BUTTON}</arg>
+<arg>timeout=3s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-03-13T18:09:55.091181" elapsed="0.426308"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Bypass Android 10 Alerts" owner="android-res">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-03-13T18:09:55.518813" level="INFO">Clicking element '//android.widget.Button[@resource-id="com.android.permissioncontroller:id/continue_button"]'.</msg>
+<msg time="2025-03-13T18:09:55.708551" level="INFO">xpath criteria: //android.widget.Button[@resource-id="com.android.permissioncontroller:id/continue_button"]</msg>
+<arg>${CONTINUE-BUTTON}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-03-13T18:09:55.518036" elapsed="0.190589"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-03-13T18:09:58.186173" level="INFO">xpath criteria: //android.widget.Button[@resource-id="android:id/button1"]
+xpath criteria: //android.widget.Button[@resource-id="android:id/button1"]
+xpath criteria: //android.widget.Button[@resource-id="android:id/button1"]</msg>
+<arg>${OK-BUTTON1}</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-03-13T18:09:55.708889" elapsed="2.477381"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-03-13T18:09:58.187376" level="INFO">Clicking element '//android.widget.Button[@resource-id="android:id/button1"]'.</msg>
+<msg time="2025-03-13T18:09:58.324979" level="INFO">xpath criteria: //android.widget.Button[@resource-id="android:id/button1"]</msg>
+<arg>${OK-BUTTON1}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-03-13T18:09:58.186446" elapsed="0.138606"/>
+</kw>
+<doc>Maneja alertas de permisos en Android 10+</doc>
+<status status="PASS" start="2025-03-13T18:09:55.517876" elapsed="2.807254"/>
+</kw>
+<arg>${ALERT} == True</arg>
+<arg>Bypass Android 10 Alerts</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-03-13T18:09:55.517618" elapsed="2.807545"/>
+</kw>
+<doc>Abre la aplicación en el dispositivo Android</doc>
+<status status="PASS" start="2025-03-13T18:09:46.017871" elapsed="12.307326"/>
+</kw>
+<kw name="Signin With User" owner="android-res">
+<kw name="Input User Email" owner="android-res">
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2025-03-13T18:09:58.650832" level="INFO">criteria is chat21.android.demo:id/email</msg>
+<arg>${LOGIN-EMAIL-FIELD}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2025-03-13T18:09:58.325966" elapsed="0.324939"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2025-03-13T18:09:58.651851" level="INFO">Typing text 'rtorrado80@gmail.com' into text field 'id=chat21.android.demo:id/email'</msg>
+<msg time="2025-03-13T18:09:59.011608" level="INFO">criteria is chat21.android.demo:id/email</msg>
+<arg>${LOGIN-EMAIL-FIELD}</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2025-03-13T18:09:58.651035" elapsed="0.360789"/>
+</kw>
+<arg>${EMAIL}</arg>
+<status status="PASS" start="2025-03-13T18:09:58.325818" elapsed="0.686329"/>
+</kw>
+<kw name="Input User Password" owner="android-res">
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2025-03-13T18:09:59.550829" level="INFO">criteria is chat21.android.demo:id/password</msg>
+<arg>${LOGIN-PASSWORD-FIELD}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2025-03-13T18:09:59.012680" elapsed="0.538228"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2025-03-13T18:09:59.552469" level="INFO">Typing text 'R123456a' into text field 'id=chat21.android.demo:id/password'</msg>
+<msg time="2025-03-13T18:09:59.624505" level="INFO">criteria is chat21.android.demo:id/password</msg>
+<arg>${LOGIN-PASSWORD-FIELD}</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2025-03-13T18:09:59.551040" elapsed="0.073545"/>
+</kw>
+<arg>${USERPASSWORD}</arg>
+<status status="PASS" start="2025-03-13T18:09:59.012438" elapsed="0.612212"/>
+</kw>
+<kw name="Submit Login" owner="android-res">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-03-13T18:09:59.625735" level="INFO">Clicking element 'id=chat21.android.demo:id/login'.</msg>
+<msg time="2025-03-13T18:10:00.210762" level="INFO">criteria is chat21.android.demo:id/login</msg>
+<arg>${LOGIN-SIGNIN-BUTTON}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-03-13T18:09:59.624962" elapsed="0.585879"/>
+</kw>
+<status status="PASS" start="2025-03-13T18:09:59.624783" elapsed="0.586131"/>
+</kw>
+<kw name="Verify Login Is Successful" owner="android-res">
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2025-03-13T18:10:01.738031" level="INFO">xpath criteria: //android.widget.TextView[@text="Chat21"]
+xpath criteria: //android.widget.TextView[@text="Chat21"]</msg>
+<arg>${MAIN-HOME-TAB}</arg>
+<arg>timeout=15s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2025-03-13T18:10:00.211277" elapsed="1.526835"/>
+</kw>
+<status status="PASS" start="2025-03-13T18:10:00.211060" elapsed="1.527117"/>
+</kw>
+<arg>${USER1-DETAILS}[email]</arg>
+<arg>${USER1-DETAILS}[password]</arg>
+<status status="PASS" start="2025-03-13T18:09:58.325547" elapsed="3.412667"/>
+</kw>
+<kw name="Logout With User" owner="android-res">
+<kw name="Go To Profile Page" owner="android-res">
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2025-03-13T18:10:02.718520" level="INFO">xpath criteria: //android.widget.TextView[@text="PROFILE"]
+xpath criteria: //android.widget.TextView[@text="PROFILE"]</msg>
+<arg>${MAIN-PROFILE-TAB}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2025-03-13T18:10:01.740845" elapsed="0.977749"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-03-13T18:10:02.719569" level="INFO">Clicking element '//android.widget.TextView[@text="PROFILE"]'.</msg>
+<msg time="2025-03-13T18:10:03.764024" level="INFO">xpath criteria: //android.widget.TextView[@text="PROFILE"]</msg>
+<arg>${MAIN-PROFILE-TAB}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-03-13T18:10:02.718721" elapsed="1.045373"/>
+</kw>
+<doc>Navega a la pestaña de perfil</doc>
+<status status="PASS" start="2025-03-13T18:10:01.740537" elapsed="2.023619"/>
+</kw>
+<kw name="Click The Logout Button" owner="android-res">
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2025-03-13T18:10:03.978915" level="INFO">criteria is chat21.android.demo:id/logout</msg>
+<arg>${LOGOUT-BUTTON}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2025-03-13T18:10:03.764525" elapsed="0.214471"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-03-13T18:10:03.979979" level="INFO">Clicking element 'id=chat21.android.demo:id/logout'.</msg>
+<msg time="2025-03-13T18:10:04.759924" level="INFO">criteria is chat21.android.demo:id/logout</msg>
+<arg>${LOGOUT-BUTTON}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-03-13T18:10:03.979123" elapsed="0.780889"/>
+</kw>
+<doc>Presiona el botón de logout y confirma si es necesario</doc>
+<status status="PASS" start="2025-03-13T18:10:03.764293" elapsed="0.995797"/>
+</kw>
+<kw name="Verify Login Email Field Is Displayed" owner="android-res">
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2025-03-13T18:10:05.306722" level="INFO">criteria is chat21.android.demo:id/email</msg>
+<arg>${LOGIN-EMAIL-FIELD}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2025-03-13T18:10:04.760469" elapsed="0.546354"/>
+</kw>
+<doc>Verifica que el usuario fue deslogueado correctamente</doc>
+<status status="PASS" start="2025-03-13T18:10:04.760250" elapsed="0.546666"/>
+</kw>
+<doc>Cierra la sesión del usuario actual y verifica el logout</doc>
+<status status="PASS" start="2025-03-13T18:10:01.740331" elapsed="3.566634"/>
+</kw>
+<kw name="Signin With User" owner="android-res">
+<kw name="Input User Email" owner="android-res">
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2025-03-13T18:10:06.134501" level="INFO">criteria is chat21.android.demo:id/email</msg>
+<arg>${LOGIN-EMAIL-FIELD}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2025-03-13T18:10:05.308062" elapsed="0.826520"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2025-03-13T18:10:06.135613" level="INFO">Typing text 'rftutorials2@gmail.com' into text field 'id=chat21.android.demo:id/email'</msg>
+<msg time="2025-03-13T18:10:06.823071" level="INFO">criteria is chat21.android.demo:id/email</msg>
+<arg>${LOGIN-EMAIL-FIELD}</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2025-03-13T18:10:06.134713" elapsed="0.688429"/>
+</kw>
+<arg>${EMAIL}</arg>
+<status status="PASS" start="2025-03-13T18:10:05.307833" elapsed="1.515371"/>
+</kw>
+<kw name="Input User Password" owner="android-res">
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2025-03-13T18:10:07.345944" level="INFO">criteria is chat21.android.demo:id/password</msg>
+<arg>${LOGIN-PASSWORD-FIELD}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2025-03-13T18:10:06.823579" elapsed="0.522442"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2025-03-13T18:10:07.347114" level="INFO">Typing text 'R123456a' into text field 'id=chat21.android.demo:id/password'</msg>
+<msg time="2025-03-13T18:10:07.416955" level="INFO">criteria is chat21.android.demo:id/password</msg>
+<arg>${LOGIN-PASSWORD-FIELD}</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2025-03-13T18:10:07.346146" elapsed="0.070880"/>
+</kw>
+<arg>${USERPASSWORD}</arg>
+<status status="PASS" start="2025-03-13T18:10:06.823349" elapsed="0.593741"/>
+</kw>
+<kw name="Submit Login" owner="android-res">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-03-13T18:10:07.418294" level="INFO">Clicking element 'id=chat21.android.demo:id/login'.</msg>
+<msg time="2025-03-13T18:10:07.989621" level="INFO">criteria is chat21.android.demo:id/login</msg>
+<arg>${LOGIN-SIGNIN-BUTTON}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-03-13T18:10:07.417404" elapsed="0.572292"/>
+</kw>
+<status status="PASS" start="2025-03-13T18:10:07.417222" elapsed="0.572544"/>
+</kw>
+<kw name="Verify Login Is Successful" owner="android-res">
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<msg time="2025-03-13T18:10:08.882047" level="INFO">xpath criteria: //android.widget.TextView[@text="Chat21"]
+xpath criteria: //android.widget.TextView[@text="Chat21"]</msg>
+<arg>${MAIN-HOME-TAB}</arg>
+<arg>timeout=15s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" start="2025-03-13T18:10:07.990106" elapsed="0.892264"/>
+</kw>
+<status status="PASS" start="2025-03-13T18:10:07.989907" elapsed="0.892778"/>
+</kw>
+<arg>${USER2-DETAILS}[email]</arg>
+<arg>${USER2-DETAILS}[password]</arg>
+<status status="PASS" start="2025-03-13T18:10:05.307297" elapsed="3.575532"/>
+</kw>
+<doc>Test para iniciar sesión en la app Android</doc>
+<status status="PASS" start="2025-03-13T18:09:46.017249" elapsed="22.866825"/>
+</test>
+<status status="PASS" start="2025-03-13T18:09:45.842957" elapsed="23.043550"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Login Android" id="s1" pass="1" fail="0" skip="0">Login Android</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
