@@ -2,26 +2,31 @@
 Library     SeleniumLibrary
 
 *** Variables ***
-${ruta_fotos_pagina}=   F:/Documentos/WorkspaceRobotFramework/PyCharm/RobotFramework/Reportes/Img
+# Ruta base para guardar las capturas de pantalla
+${ruta_fotos_pagina}=   ../Reportes/Img
 
 *** Keywords ***
 F_texto
-    [Arguments]     ${sel}      ${dato}
-    wait until element is visible    ${sel}
-    input text    ${sel}     ${dato}
+    [Documentation]    Espera a que el elemento sea visible y escribe el texto indicado.
+    [Arguments]     ${selector}    ${valor}
+    Wait Until Element Is Visible    ${selector}
+    Input Text                       ${selector}    ${valor}
 
 F_enter
-    [Arguments]     ${sel}
-    wait until element is visible    ${sel}
-    Press Keys    ${sel}        ENTER
+    [Documentation]    Espera a que el elemento sea visible y presiona la tecla ENTER.
+    [Arguments]     ${selector}
+    Wait Until Element Is Visible    ${selector}
+    Press Keys                       ${selector}    ENTER
 
 F_foto_pagina
+    [Documentation]    Captura una captura de pantalla de toda la página con nombre personalizado.
     [Arguments]    ${nombre_imagen}
-    capture page screenshot    ${ruta_fotos_pagina}/${nombre_imagen}
+    Capture Page Screenshot    ${ruta_fotos_pagina}/${nombre_imagen}
 
 F_foto_selector
-    [Arguments]     ${sel}    ${nombre_imagen}
-    wait until element is visible    ${sel}
-    wait until element is enabled    ${sel}
-    element should be visible    ${sel}
-    capture element screenshot    ${sel}    ${ruta_fotos_pagina}/${nombre_imagen}
+    [Documentation]    Captura una imagen del elemento indicado, verificando visibilidad y disponibilidad.
+    [Arguments]    ${selector}    ${nombre_imagen}
+    Wait Until Element Is Visible    ${selector}
+    Wait Until Element Is Enabled    ${selector}
+    Element Should Be Visible        ${selector}
+    Capture Element Screenshot       ${selector}    ${ruta_fotos_pagina}/${nombre_imagen}
