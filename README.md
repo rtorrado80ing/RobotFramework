@@ -36,18 +36,21 @@ Para ejecutar todas las pruebas, usa el siguiente comando:
 
 ```sh
 robot -d results tests/
+robot -d results Test_Case/
 ```
 
 Ejecutar un caso de prueba específico:
 
 ```sh
 robot -d results tests/[NTest].robot
+robot -d Reportes Test_Case/Keywords.robot
 ```
 
 Ejecutar un caso de prueba específico por tag:
 
 ```sh
-robot -d results -i [Ntag] tests/test_google.robot
+robot -d nombreCarpetaresultados -i [Nombretag] carpetaTest/archivoEjecutar.robot
+robot -d ReportesTag -i login_ocho Test_Case/Valida_*.robot
 ```
 📌 **Opciones útiles:**
 - `-d results` → Guarda los reportes en la carpeta `results`.

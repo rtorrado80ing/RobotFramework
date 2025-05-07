@@ -1,236 +1,236 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.1 on win32)" generated="2025-05-06T20:37:36.415274" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.13.1 on win32)" generated="2025-05-07T10:40:34.721727" rpa="false" schemaversion="5">
 <suite id="s1" name="Keywords" source="F:\Documentos\WorkspaceRobotFramework\PyCharm\RobotFramework\Test_Case\Keywords.robot">
-<test id="s1-t1" name="Práctica Uno" line="18">
+<test id="s1-t1" name="Práctica Uno" line="26">
 <kw name="Cargar Navegador" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-05-06T20:37:36.931950" level="INFO">Opening browser 'firefox' to base url 'https://demoqa.com/text-box'.</msg>
+<msg time="2025-05-07T10:40:35.244386" level="INFO">Opening browser 'firefox' to base url 'https://demoqa.com/text-box'.</msg>
 <arg>${URL}</arg>
 <arg>${NAVEGADOR}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-05-06T20:37:36.931534" elapsed="22.132896"/>
+<status status="PASS" start="2025-05-07T10:40:35.244117" elapsed="13.931829"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-05-06T20:37:59.064713" elapsed="0.266989"/>
+<status status="PASS" start="2025-05-07T10:40:49.176335" elapsed="0.265928"/>
 </kw>
 <kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2025-05-06T20:37:59.335246" level="INFO">Page title is 'DEMOQA'.</msg>
+<msg time="2025-05-07T10:40:49.445915" level="INFO">Page title is 'DEMOQA'.</msg>
 <arg>DEMOQA</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<status status="PASS" start="2025-05-06T20:37:59.332016" elapsed="0.003394"/>
+<status status="PASS" start="2025-05-07T10:40:49.442748" elapsed="0.003282"/>
 </kw>
 <kw name="F_foto_pagina" owner="Funciones">
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2025-05-06T20:37:59.496709" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Img/inicial.png"&gt;&lt;img src="Img/inicial.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-05-07T10:40:49.583368" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Img/inicial.png"&gt;&lt;img src="Img/inicial.png" width="800px"&gt;&lt;/a&gt;</msg>
 <arg>${ruta_fotos_pagina}/${nombre_imagen}</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2025-05-06T20:37:59.336429" elapsed="0.160444"/>
+<status status="PASS" start="2025-05-07T10:40:49.446724" elapsed="0.136782"/>
 </kw>
 <arg>inicial.png</arg>
 <doc>Captura una captura de pantalla de toda la página con nombre personalizado.</doc>
-<status status="PASS" start="2025-05-06T20:37:59.335761" elapsed="0.161254"/>
+<status status="PASS" start="2025-05-07T10:40:49.446300" elapsed="0.137334"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-06T20:37:59.697630" level="INFO">Slept 200 milliseconds.</msg>
+<msg time="2025-05-07T10:40:49.784433" level="INFO">Slept 200 milliseconds.</msg>
 <arg>${ESPERA}</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-06T20:37:59.497219" elapsed="0.200590"/>
+<status status="PASS" start="2025-05-07T10:40:49.583791" elapsed="0.200783"/>
 </kw>
 <doc>Abre el navegador, maximiza la ventana y toma una captura inicial de la página.</doc>
-<status status="PASS" start="2025-05-06T20:37:36.929995" elapsed="22.767980"/>
+<status status="PASS" start="2025-05-07T10:40:35.242800" elapsed="14.541886"/>
 </kw>
 <kw name="Validar Nombre">
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-06T20:37:59.899343" level="INFO">Slept 200 milliseconds.</msg>
+<msg time="2025-05-07T10:40:49.986371" level="INFO">Slept 200 milliseconds.</msg>
 <arg>${ESPERA}</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-06T20:37:59.698742" elapsed="0.200748"/>
+<status status="PASS" start="2025-05-07T10:40:49.785482" elapsed="0.201060"/>
 </kw>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-05-06T20:37:59.983798" level="INFO">Element 'id=userName' is displayed.</msg>
+<msg time="2025-05-07T10:40:50.092309" level="INFO">Element 'id=userName' is displayed.</msg>
 <arg>id=userName</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2025-05-06T20:37:59.899694" elapsed="0.084204"/>
+<status status="PASS" start="2025-05-07T10:40:49.986814" elapsed="0.105642"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>\nSe ingresa el nombre :: ${NOMBRE}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-05-06T20:37:59.984052" elapsed="0.000520"/>
+<status status="PASS" start="2025-05-07T10:40:50.092696" elapsed="0.000611"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-06T20:37:59.984901" level="INFO">Typing text 'Rodrigo' into text field 'id=userName'.</msg>
+<msg time="2025-05-07T10:40:50.093745" level="INFO">Typing text 'Rodrigo' into text field 'id=userName'.</msg>
 <arg>id=userName</arg>
 <arg>${NOMBRE}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-06T20:37:59.984708" elapsed="0.085287"/>
+<status status="PASS" start="2025-05-07T10:40:50.093478" elapsed="0.063428"/>
 </kw>
 <doc>Verifica visibilidad del campo nombre y lo llena con el valor definido.</doc>
-<status status="PASS" start="2025-05-06T20:37:59.698460" elapsed="0.371832"/>
+<status status="PASS" start="2025-05-07T10:40:49.785177" elapsed="0.371888"/>
 </kw>
 <kw name="Validar Correo">
 <kw name="F_texto" owner="Funciones">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${selector}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-05-06T20:38:00.073492" elapsed="0.013700"/>
+<status status="PASS" start="2025-05-07T10:40:50.157900" elapsed="0.014931"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-06T20:38:00.087870" level="INFO">Typing text 'rodrigo@gmail.com' into text field 'id=userEmail'.</msg>
+<msg time="2025-05-07T10:40:50.173204" level="INFO">Typing text 'rodrigo@gmail.com' into text field 'id=userEmail'.</msg>
 <arg>${selector}</arg>
 <arg>${valor}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-06T20:38:00.087477" elapsed="0.024872"/>
+<status status="PASS" start="2025-05-07T10:40:50.172994" elapsed="0.035752"/>
 </kw>
 <arg>id=userEmail</arg>
 <arg>${EMAIL}</arg>
 <doc>Espera a que el elemento sea visible y escribe el texto indicado.</doc>
-<status status="PASS" start="2025-05-06T20:38:00.072494" elapsed="0.040056"/>
+<status status="PASS" start="2025-05-07T10:40:50.157698" elapsed="0.051263"/>
 </kw>
 <doc>Llena el campo de correo usando un keyword reutilizable.</doc>
-<status status="PASS" start="2025-05-06T20:38:00.071334" elapsed="0.041316"/>
+<status status="PASS" start="2025-05-07T10:40:50.157445" elapsed="0.051619"/>
 </kw>
 <kw name="Cargar Direcciones">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-06T20:38:00.113854" level="INFO">Typing text 'Dirección uno' into text field 'id=currentAddress'.</msg>
+<msg time="2025-05-07T10:40:50.210030" level="INFO">Typing text 'Dirección uno' into text field 'id=currentAddress'.</msg>
 <arg>id=currentAddress</arg>
 <arg>${DIRECCION_1}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-06T20:38:00.113452" elapsed="0.025860"/>
+<status status="PASS" start="2025-05-07T10:40:50.209856" elapsed="0.036035"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-06T20:38:00.340086" level="INFO">Slept 200 milliseconds.</msg>
+<msg time="2025-05-07T10:40:50.446988" level="INFO">Slept 200 milliseconds.</msg>
 <arg>${ESPERA}</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-06T20:38:00.139637" elapsed="0.200625"/>
+<status status="PASS" start="2025-05-07T10:40:50.246163" elapsed="0.201006"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>Cargando dirección :: ${DIRECCION_1}</arg>
+<arg>Cargando dirección actual :: ${DIRECCION_1}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-05-06T20:38:00.340508" elapsed="0.000848"/>
+<status status="PASS" start="2025-05-07T10:40:50.447433" elapsed="0.000983"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-06T20:38:00.342140" level="INFO">Typing text 'Dirección dos' into text field 'id=permanentAddress'.</msg>
+<msg time="2025-05-07T10:40:50.449228" level="INFO">Typing text 'Dirección dos' into text field 'id=permanentAddress'.</msg>
 <arg>id=permanentAddress</arg>
 <arg>${DIRECCION_2}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-06T20:38:00.341699" elapsed="0.040740"/>
+<status status="PASS" start="2025-05-07T10:40:50.448785" elapsed="0.038024"/>
 </kw>
 <kw name="F_foto_selector" owner="Funciones">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${selector}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-05-06T20:38:00.382879" elapsed="0.011875"/>
+<status status="PASS" start="2025-05-07T10:40:50.487302" elapsed="0.020663"/>
 </kw>
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
 <arg>${selector}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2025-05-06T20:38:00.394933" elapsed="0.011219"/>
+<status status="PASS" start="2025-05-07T10:40:50.508279" elapsed="0.042259"/>
 </kw>
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-05-06T20:38:00.422373" level="INFO">Element 'id=permanentAddress' is displayed.</msg>
+<msg time="2025-05-07T10:40:50.586404" level="INFO">Element 'id=permanentAddress' is displayed.</msg>
 <arg>${selector}</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2025-05-06T20:38:00.406311" elapsed="0.016165"/>
+<status status="PASS" start="2025-05-07T10:40:50.550834" elapsed="0.035835"/>
 </kw>
 <kw name="Capture Element Screenshot" owner="SeleniumLibrary">
-<msg time="2025-05-06T20:38:00.444495" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Img/Direccion2.png"&gt;&lt;img src="Img/Direccion2.png" width="400px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-05-07T10:40:50.616542" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Img/Direccion2.png"&gt;&lt;img src="Img/Direccion2.png" width="400px"&gt;&lt;/a&gt;</msg>
 <arg>${selector}</arg>
 <arg>${ruta_fotos_pagina}/${nombre_imagen}</arg>
 <doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
-<status status="PASS" start="2025-05-06T20:38:00.422630" elapsed="0.022047"/>
+<status status="PASS" start="2025-05-07T10:40:50.587047" elapsed="0.029706"/>
 </kw>
 <arg>id=permanentAddress</arg>
 <arg>Direccion2.png</arg>
 <doc>Captura una imagen del elemento indicado, verificando visibilidad y disponibilidad.</doc>
-<status status="PASS" start="2025-05-06T20:38:00.382646" elapsed="0.062206"/>
+<status status="PASS" start="2025-05-07T10:40:50.487044" elapsed="0.129884"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-06T20:38:00.645564" level="INFO">Slept 200 milliseconds.</msg>
+<msg time="2025-05-07T10:40:50.818312" level="INFO">Slept 200 milliseconds.</msg>
 <arg>${ESPERA}</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-06T20:38:00.445073" elapsed="0.200663"/>
+<status status="PASS" start="2025-05-07T10:40:50.617162" elapsed="0.201392"/>
 </kw>
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2025-05-06T20:38:00.647091" level="INFO">Executing JavaScript:
+<msg time="2025-05-07T10:40:50.819860" level="INFO">Executing JavaScript:
 window.scrollTo(0, 200)
 Without any arguments.</msg>
 <arg>window.scrollTo(0, 200)</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2025-05-06T20:38:00.646360" elapsed="0.011463"/>
+<status status="PASS" start="2025-05-07T10:40:50.819110" elapsed="0.010581"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-06T20:38:00.858947" level="INFO">Slept 200 milliseconds.</msg>
+<msg time="2025-05-07T10:40:51.030343" level="INFO">Slept 200 milliseconds.</msg>
 <arg>${ESPERA}</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-06T20:38:00.658114" elapsed="0.201027"/>
+<status status="PASS" start="2025-05-07T10:40:50.829955" elapsed="0.200523"/>
 </kw>
 <doc>Llena los campos de dirección actual y permanente, y toma capturas.</doc>
-<status status="PASS" start="2025-05-06T20:38:00.113109" elapsed="0.746220"/>
+<status status="PASS" start="2025-05-07T10:40:50.209606" elapsed="0.820977"/>
 </kw>
 <kw name="Enviar Información">
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2025-05-06T20:38:00.862272" level="INFO">Executing JavaScript:
+<msg time="2025-05-07T10:40:51.032051" level="INFO">Executing JavaScript:
 window.scrollTo(0, document.body.scrollHeight)
 Without any arguments.</msg>
 <arg>window.scrollTo(0, document.body.scrollHeight)</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2025-05-06T20:38:00.860514" elapsed="0.008969"/>
+<status status="PASS" start="2025-05-07T10:40:51.031197" elapsed="0.004813"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-06T20:38:02.870179" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-05-07T10:40:53.037230" level="INFO">Slept 2 seconds.</msg>
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-06T20:38:00.869750" elapsed="2.000632"/>
+<status status="PASS" start="2025-05-07T10:40:51.036174" elapsed="2.001187"/>
 </kw>
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2025-05-06T20:38:02.954082" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Img/final.png"&gt;&lt;img src="Img/final.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-05-07T10:40:53.093827" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Img/final.png"&gt;&lt;img src="Img/final.png" width="800px"&gt;&lt;/a&gt;</msg>
 <arg>${IMG_DIR}/final.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2025-05-06T20:38:02.870652" elapsed="0.083587"/>
+<status status="PASS" start="2025-05-07T10:40:53.037544" elapsed="0.056384"/>
 </kw>
 <kw name="F_foto_pagina" owner="Funciones">
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2025-05-06T20:38:03.014436" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Img/final2.png"&gt;&lt;img src="Img/final2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-05-07T10:40:53.134894" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Img/final2.png"&gt;&lt;img src="Img/final2.png" width="800px"&gt;&lt;/a&gt;</msg>
 <arg>${ruta_fotos_pagina}/${nombre_imagen}</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2025-05-06T20:38:02.954976" elapsed="0.059613"/>
+<status status="PASS" start="2025-05-07T10:40:53.094476" elapsed="0.040536"/>
 </kw>
 <arg>final2.png</arg>
 <doc>Captura una captura de pantalla de toda la página con nombre personalizado.</doc>
-<status status="PASS" start="2025-05-06T20:38:02.954526" elapsed="0.060198"/>
+<status status="PASS" start="2025-05-07T10:40:53.094103" elapsed="0.041011"/>
 </kw>
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2025-05-06T20:38:03.015529" level="INFO">Executing JavaScript:
+<msg time="2025-05-07T10:40:53.135608" level="INFO">Executing JavaScript:
 document.getElementById("adplus-anchor").style.display = "none";
 Without any arguments.</msg>
 <arg>document.getElementById("adplus-anchor").style.display = "none";</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2025-05-06T20:38:03.014915" elapsed="0.006118"/>
+<status status="PASS" start="2025-05-07T10:40:53.135249" elapsed="0.005791"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-06T20:38:03.021422" level="INFO">Clicking button 'id=submit'.</msg>
+<msg time="2025-05-07T10:40:53.141403" level="INFO">Clicking button 'id=submit'.</msg>
 <arg>id=submit</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-06T20:38:03.021220" elapsed="0.228426"/>
+<status status="PASS" start="2025-05-07T10:40:53.141216" elapsed="0.230152"/>
 </kw>
 <doc>Captura pantalla final, oculta anuncio y envía el formulario.</doc>
-<status status="PASS" start="2025-05-06T20:38:00.859866" elapsed="2.389951"/>
+<status status="PASS" start="2025-05-07T10:40:51.030939" elapsed="2.340530"/>
 </kw>
 <kw name="Cerrar Navegador" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-05-06T20:38:03.251135" elapsed="2.912953"/>
+<status status="PASS" start="2025-05-07T10:40:53.372030" elapsed="2.932987"/>
 </kw>
 <doc>Cierra el navegador al finalizar el test.</doc>
-<status status="PASS" start="2025-05-06T20:38:03.250610" elapsed="2.913696"/>
+<status status="PASS" start="2025-05-07T10:40:53.371830" elapsed="2.933459"/>
 </kw>
 <doc>Caso de prueba que automatiza el formulario de DEMOQA utilizando keywords personalizados.</doc>
 <tag>test_uno</tag>
-<status status="PASS" start="2025-05-06T20:37:36.928560" elapsed="29.236045"/>
+<status status="PASS" start="2025-05-07T10:40:35.241574" elapsed="21.064263"/>
 </test>
 <doc>Práctica de uso de Keywords personalizados para automatizar el formulario de DEMOQA.</doc>
-<status status="PASS" start="2025-05-06T20:37:36.417532" elapsed="29.748719"/>
+<status status="PASS" start="2025-05-07T10:40:34.723340" elapsed="21.583994"/>
 </suite>
 <statistics>
 <total>
