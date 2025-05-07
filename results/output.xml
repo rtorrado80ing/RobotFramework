@@ -1,0 +1,2964 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.1 on win32)" generated="2025-05-07T10:48:24.948506" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Case" source="F:\Documentos\WorkspaceRobotFramework\PyCharm\RobotFramework\Test_Case">
+<suite id="s1-s1" name="Alertas" source="F:\Documentos\WorkspaceRobotFramework\PyCharm\RobotFramework\Test_Case\Alertas.robot">
+<test id="s1-s1-t1" name="Mi octavo Test" line="15">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-07T10:48:25.134600" level="INFO">https://testpages.eviltester.com/styled/alerts/alert-test.html firefox</msg>
+<arg>${url} ${navegador}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-07T10:48:25.134420" elapsed="0.000228"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:48:25.135005" level="INFO">Opening browser 'firefox' to base url 'https://testpages.eviltester.com/styled/alerts/alert-test.html'.</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-07T10:48:25.134849" elapsed="6.597689"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-07T10:48:31.732918" elapsed="0.295421"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.8s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-05-07T10:48:32.028907" elapsed="0.000520"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Alert Box Examples</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-05-07T10:48:32.029911" elapsed="0.815489"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:48:33.650216" level="INFO">Page title is 'Test Page For JavaScript Alerts'.</msg>
+<arg>Test Page For JavaScript Alerts</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-05-07T10:48:32.845962" elapsed="0.804381"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//input[@id='alertexamples']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-05-07T10:48:33.650658" elapsed="1.626961"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:48:35.278830" level="INFO">Clicking button 'id=alertexamples'.</msg>
+<arg>id=alertexamples</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T10:48:35.278409" elapsed="2.523550"/>
+</kw>
+<kw name="Handle Alert" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:48:37.802887" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<arg>accept</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<status status="PASS" start="2025-05-07T10:48:37.802585" elapsed="2.437781"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:48:40.241234" level="INFO">Clicking button '//input[@id='confirmexample']'.</msg>
+<arg>//input[@id='confirmexample']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T10:48:40.240955" elapsed="2.471373"/>
+</kw>
+<kw name="Handle Alert" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:48:42.714148" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<arg>accept</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<status status="PASS" start="2025-05-07T10:48:42.713919" elapsed="2.429542"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:48:45.144380" level="INFO">Clicking button '//input[@id='confirmexample']'.</msg>
+<arg>//input[@id='confirmexample']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T10:48:45.144009" elapsed="2.536736"/>
+</kw>
+<kw name="Handle Alert" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:48:47.681287" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<arg>dismiss</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<status status="PASS" start="2025-05-07T10:48:47.681145" elapsed="2.433070"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:48:50.115146" level="INFO">Clicking button 'id=alertexamples'.</msg>
+<arg>id=alertexamples</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T10:48:50.114788" elapsed="2.460102"/>
+</kw>
+<kw name="Alert Should Be Present" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:48:52.575460" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<arg>I am an alert box!</arg>
+<doc>Verifies that an alert is present and by default, accepts it.</doc>
+<status status="PASS" start="2025-05-07T10:48:52.575230" elapsed="2.430882"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-07T10:48:55.007161" elapsed="3.597669"/>
+</kw>
+<doc>Obtava prueba de alertas</doc>
+<tag>test_handle_alert</tag>
+<status status="PASS" start="2025-05-07T10:48:25.133739" elapsed="33.472030"/>
+</test>
+<doc>Proyecto de pruebas para proyecto</doc>
+<status status="PASS" start="2025-05-07T10:48:24.980823" elapsed="33.629304"/>
+</suite>
+<suite id="s1-s2" name="Appium Android" source="F:\Documentos\WorkspaceRobotFramework\PyCharm\RobotFramework\Test_Case\Appium_Android.robot">
+<test id="s1-s2-t1" name="App_Test_1" line="27">
+<kw name="Open Application" owner="AppiumLibrary">
+<msg time="2025-05-07T10:49:00.819590" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002C6571B6E90&gt;: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión')': /wd/hub/session</msg>
+<msg time="2025-05-07T10:49:02.859621" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002C6571B7110&gt;: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión')': /wd/hub/session</msg>
+<msg time="2025-05-07T10:49:04.907106" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002C657163230&gt;: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión')': /wd/hub/session</msg>
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-05-07T10:49:06.954621" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-05-07T10:49:06.954182" elapsed="0.262975">No application is open</status>
+</kw>
+<msg time="2025-05-07T10:49:07.218472" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-05-07T10:49:07.219008" level="FAIL">MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=4723): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002C657163490&gt;: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))</msg>
+<arg>${appium_host}</arg>
+<arg>platformName=${platform_name}</arg>
+<arg>deviceName=${deviceName}</arg>
+<arg>appPackage=${appPackage}</arg>
+<arg>appActivity=${appActivity}</arg>
+<arg>platformVersion=${platformVersion}</arg>
+<arg>automationName=${automationName}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="FAIL" start="2025-05-07T10:48:58.766448" elapsed="8.459456">MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=4723): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002C657163490&gt;: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))</status>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<arg>${CONTINUE-BUTTON}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" start="2025-05-07T10:49:07.226471" elapsed="0.000039"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<arg>${CONTINUE-BUTTON}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" start="2025-05-07T10:49:07.226792" elapsed="0.000031"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<arg>${OK-BUTTON1}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" start="2025-05-07T10:49:07.227033" elapsed="0.000024"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<arg>${OK-BUTTON1}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" start="2025-05-07T10:49:07.227291" elapsed="0.000031"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<arg>${LOGIN-BUTTON}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="NOT RUN" start="2025-05-07T10:49:07.227501" elapsed="0.000023"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-05-07T10:49:07.227678" elapsed="0.000022"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="NOT RUN" start="2025-05-07T10:49:07.227866" elapsed="0.000021"/>
+</kw>
+<kw name="Close Application" owner="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="NOT RUN" start="2025-05-07T10:49:07.228034" elapsed="0.000019"/>
+</kw>
+<doc>Test case to understand robotframework with appium</doc>
+<status status="FAIL" start="2025-05-07T10:48:58.766077" elapsed="8.462330">MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=4723): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002C657163490&gt;: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))</status>
+</test>
+<status status="FAIL" start="2025-05-07T10:48:58.612448" elapsed="8.617088"/>
+</suite>
+<suite id="s1-s3" name="Appium iOS" source="F:\Documentos\WorkspaceRobotFramework\PyCharm\RobotFramework\Test_Case\Appium_iOS.robot">
+<test id="s1-s3-t1" name="App_Test_1" line="26">
+<kw name="Open Application" owner="AppiumLibrary">
+<msg time="2025-05-07T10:49:07.234893" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002C657217AD0&gt;: Failed to establish a new connection: [WinError 10049] La dirección solicitada no es válida en este contexto')': /wd/hub/session</msg>
+<msg time="2025-05-07T10:49:07.237607" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002C6572AB8A0&gt;: Failed to establish a new connection: [WinError 10049] La dirección solicitada no es válida en este contexto')': /wd/hub/session</msg>
+<msg time="2025-05-07T10:49:07.241710" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002C6572ABCE0&gt;: Failed to establish a new connection: [WinError 10049] La dirección solicitada no es válida en este contexto')': /wd/hub/session</msg>
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-05-07T10:49:07.242942" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-05-07T10:49:07.242734" elapsed="0.006849">No application is open</status>
+</kw>
+<msg time="2025-05-07T10:49:07.250238" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-05-07T10:49:07.250863" level="FAIL">MaxRetryError: HTTPConnectionPool(host='0.0.0.0', port=4723): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002C6572AA8B0&gt;: Failed to establish a new connection: [WinError 10049] La dirección solicitada no es válida en este contexto'))</msg>
+<arg>${appium_host}</arg>
+<arg>platformName=${platform_name}</arg>
+<arg>deviceName=${deviceName}</arg>
+<arg>app=${app}</arg>
+<arg>udid=${udid}</arg>
+<arg>platformVersion=${platformVersion}</arg>
+<arg>automationName=XCUITest</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="FAIL" start="2025-05-07T10:49:07.233270" elapsed="0.020847">MaxRetryError: HTTPConnectionPool(host='0.0.0.0', port=4723): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002C6572AA8B0&gt;: Failed to establish a new connection: [WinError 10049] La dirección solicitada no es válida en este contexto'))</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-05-07T10:49:07.254327" elapsed="0.000024"/>
+</kw>
+<kw name="Swipe" owner="AppiumLibrary">
+<arg>${startX}</arg>
+<arg>${startY}</arg>
+<arg>${endX}</arg>
+<arg>${endY}</arg>
+<arg>1000</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="NOT RUN" start="2025-05-07T10:49:07.254449" elapsed="0.000013"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-05-07T10:49:07.254548" elapsed="0.000011"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="NOT RUN" start="2025-05-07T10:49:07.254638" elapsed="0.000010"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<arg>${wifi_loc}</arg>
+<arg>10s</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" start="2025-05-07T10:49:07.254727" elapsed="0.000011"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<arg>${wifi_loc}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" start="2025-05-07T10:49:07.254820" elapsed="0.000011"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-05-07T10:49:07.255022" elapsed="0.000018"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<arg>${wifi_switch_loc}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" start="2025-05-07T10:49:07.255153" elapsed="0.000011"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="NOT RUN" start="2025-05-07T10:49:07.255295" elapsed="0.000011"/>
+</kw>
+<doc>Test case to understand robotframework with appium</doc>
+<status status="FAIL" start="2025-05-07T10:49:07.232756" elapsed="0.022733">MaxRetryError: HTTPConnectionPool(host='0.0.0.0', port=4723): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002C6572AA8B0&gt;: Failed to establish a new connection: [WinError 10049] La dirección solicitada no es válida en este contexto'))</status>
+</test>
+<status status="FAIL" start="2025-05-07T10:49:07.230047" elapsed="0.026331"/>
+</suite>
+<suite id="s1-s4" name="Base" source="F:\Documentos\WorkspaceRobotFramework\PyCharm\RobotFramework\Test_Case\Base.robot">
+<test id="s1-s4-t1" name="Demo uno" line="12">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:49:07.260235" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/text-box'.</msg>
+<msg time="2025-05-07T10:49:09.079119" level="WARN">The chromedriver version (134.0.6998.35) detected in PATH at C:\Python313\chromedriver.exe might not be compatible with the detected chrome version (135.0.7049.115); currently, chromedriver 135.0.7049.114 is recommended for chrome 135.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-07T10:49:07.260034" elapsed="11.783849"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-07T10:49:19.044492" elapsed="0.846592"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:49:21.645773" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-05-07T10:49:21.645916" level="FAIL">Title should have been 'ToolsQA' but was 'DEMOQA'.</msg>
+<arg>ToolsQA</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="FAIL" start="2025-05-07T10:49:19.891693" elapsed="1.800056">Title should have been 'ToolsQA' but was 'DEMOQA'.</status>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="NOT RUN" start="2025-05-07T10:49:21.692119" elapsed="0.000044"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.1s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="NOT RUN" start="2025-05-07T10:49:21.692424" elapsed="0.000024"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-05-07T10:49:21.692710" elapsed="0.000026"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2025-05-07T10:49:21.692847" elapsed="0.000018"/>
+</kw>
+<doc>Prueba de nuestras Primeras Variables</doc>
+<tag>test_uno</tag>
+<status status="FAIL" start="2025-05-07T10:49:07.259320" elapsed="14.433720">Title should have been 'ToolsQA' but was 'DEMOQA'.</status>
+</test>
+<doc>Demo de las Variables</doc>
+<status status="FAIL" start="2025-05-07T10:49:07.257175" elapsed="14.436324"/>
+</suite>
+<suite id="s1-s5" name="Base For" source="F:\Documentos\WorkspaceRobotFramework\PyCharm\RobotFramework\Test_Case\Base_For.robot">
+<test id="s1-s5-t1" name="Demo uno" line="16">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:49:21.699809" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/text-box'.</msg>
+<msg time="2025-05-07T10:49:22.178177" level="WARN">The chromedriver version (134.0.6998.35) detected in PATH at C:\Python313\chromedriver.exe might not be compatible with the detected chrome version (135.0.7049.115); currently, chromedriver 135.0.7049.114 is recommended for chrome 135.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-07T10:49:21.699654" elapsed="5.546426"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-07T10:49:27.246599" elapsed="0.840306"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:49:28.898792" level="INFO">Page title is 'DEMOQA'.</msg>
+<arg>DEMOQA</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-05-07T10:49:28.087683" elapsed="0.811303"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-05-07T10:49:28.899459" elapsed="1.605864"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.1s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-05-07T10:49:30.505892" elapsed="0.000363"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-05-07T10:49:30.507521" elapsed="0.002330"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:49:30.510924" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/text-box'.</msg>
+<msg time="2025-05-07T10:49:31.017764" level="WARN">The chromedriver version (134.0.6998.35) detected in PATH at C:\Python313\chromedriver.exe might not be compatible with the detected chrome version (135.0.7049.115); currently, chromedriver 135.0.7049.114 is recommended for chrome 135.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-07T10:49:30.510476" elapsed="2.223022"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-07T10:49:32.733789" elapsed="2.649681"/>
+</kw>
+<var name="${i}">0</var>
+<status status="PASS" start="2025-05-07T10:49:30.507289" elapsed="4.876412"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-05-07T10:49:35.384281" elapsed="0.000807"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:49:35.385722" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/text-box'.</msg>
+<msg time="2025-05-07T10:49:35.870626" level="WARN">The chromedriver version (134.0.6998.35) detected in PATH at C:\Python313\chromedriver.exe might not be compatible with the detected chrome version (135.0.7049.115); currently, chromedriver 135.0.7049.114 is recommended for chrome 135.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-07T10:49:35.385382" elapsed="4.753521"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-07T10:49:40.139180" elapsed="0.141339"/>
+</kw>
+<var name="${i}">1</var>
+<status status="PASS" start="2025-05-07T10:49:35.384045" elapsed="4.896606"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-05-07T10:49:40.281013" elapsed="0.000730"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:49:40.282233" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/text-box'.</msg>
+<msg time="2025-05-07T10:49:40.761523" level="WARN">The chromedriver version (134.0.6998.35) detected in PATH at C:\Python313\chromedriver.exe might not be compatible with the detected chrome version (135.0.7049.115); currently, chromedriver 135.0.7049.114 is recommended for chrome 135.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-07T10:49:40.281964" elapsed="6.203302"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-07T10:49:46.485882" elapsed="0.149780"/>
+</kw>
+<var name="${i}">2</var>
+<status status="PASS" start="2025-05-07T10:49:40.280865" elapsed="6.354968"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-05-07T10:49:46.636344" elapsed="0.000918"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:49:46.638037" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/text-box'.</msg>
+<msg time="2025-05-07T10:49:47.152936" level="WARN">The chromedriver version (134.0.6998.35) detected in PATH at C:\Python313\chromedriver.exe might not be compatible with the detected chrome version (135.0.7049.115); currently, chromedriver 135.0.7049.114 is recommended for chrome 135.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-07T10:49:46.637611" elapsed="6.711605"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-07T10:49:53.349780" elapsed="0.200148"/>
+</kw>
+<var name="${i}">3</var>
+<status status="PASS" start="2025-05-07T10:49:46.636122" elapsed="6.913988"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-05-07T10:49:53.550644" elapsed="0.000830"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:49:53.552045" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/text-box'.</msg>
+<msg time="2025-05-07T10:49:54.073336" level="WARN">The chromedriver version (134.0.6998.35) detected in PATH at C:\Python313\chromedriver.exe might not be compatible with the detected chrome version (135.0.7049.115); currently, chromedriver 135.0.7049.114 is recommended for chrome 135.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-07T10:49:53.551730" elapsed="5.759786"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-07T10:49:59.311807" elapsed="0.158611"/>
+</kw>
+<var name="${i}">4</var>
+<status status="PASS" start="2025-05-07T10:49:53.550418" elapsed="5.920120"/>
+</iter>
+<var>${i}</var>
+<value>0</value>
+<value>5</value>
+<status status="PASS" start="2025-05-07T10:49:30.506571" elapsed="28.964017"/>
+</for>
+<for flavor="IN">
+<iter>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>$items=='RobotFramework'</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2025-05-07T10:49:59.471265" elapsed="0.000234"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${items}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-05-07T10:49:59.471578" elapsed="0.000265"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2025-05-07T10:49:59.472270" level="INFO">${numbers} = 32188</msg>
+<var>${numbers}</var>
+<arg>5</arg>
+<arg>0123456789123</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2025-05-07T10:49:59.472069" elapsed="0.000225"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${numbers}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-05-07T10:49:59.472442" elapsed="0.000295"/>
+</kw>
+<var name="${items}">Bender</var>
+<status status="PASS" start="2025-05-07T10:49:59.471165" elapsed="0.001660"/>
+</iter>
+<iter>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>$items=='RobotFramework'</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2025-05-07T10:49:59.473062" elapsed="0.000170"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${items}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-05-07T10:49:59.473313" elapsed="0.000326"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2025-05-07T10:49:59.474009" level="INFO">${numbers} = 99560</msg>
+<var>${numbers}</var>
+<arg>5</arg>
+<arg>0123456789123</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2025-05-07T10:49:59.473785" elapsed="0.000251"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${numbers}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-05-07T10:49:59.474121" elapsed="0.000188"/>
+</kw>
+<var name="${items}">Reminator</var>
+<status status="PASS" start="2025-05-07T10:49:59.472985" elapsed="0.001384"/>
+</iter>
+<iter>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>$items=='RobotFramework'</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2025-05-07T10:49:59.474567" elapsed="0.000591"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${items}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-05-07T10:49:59.475230" elapsed="0.000195"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<msg time="2025-05-07T10:49:59.475672" level="INFO">${numbers} = 87013</msg>
+<var>${numbers}</var>
+<arg>5</arg>
+<arg>0123456789123</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2025-05-07T10:49:59.475528" elapsed="0.000164"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${numbers}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-05-07T10:49:59.475762" elapsed="0.000273"/>
+</kw>
+<var name="${items}">Robocob</var>
+<status status="PASS" start="2025-05-07T10:49:59.474502" elapsed="0.001584"/>
+</iter>
+<iter>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<msg time="2025-05-07T10:49:59.476410" level="INFO">Exiting for loop altogether.</msg>
+<arg>$items=='RobotFramework'</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2025-05-07T10:49:59.476266" elapsed="0.000205"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${items}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-05-07T10:49:59.476634" elapsed="0.000031"/>
+</kw>
+<kw name="Generate Random String" owner="String">
+<var>${numbers}</var>
+<arg>5</arg>
+<arg>0123456789123</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="NOT RUN" start="2025-05-07T10:49:59.476743" elapsed="0.000021"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${numbers}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-05-07T10:49:59.476968" elapsed="0.000023"/>
+</kw>
+<var name="${items}">RobotFramework</var>
+<status status="PASS" start="2025-05-07T10:49:59.476195" elapsed="0.000828"/>
+</iter>
+<var>${items}</var>
+<value>@{ROBOTS}</value>
+<status status="PASS" start="2025-05-07T10:49:59.470959" elapsed="0.006104"/>
+</for>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-07T10:50:01.477854" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-07T10:49:59.477277" elapsed="2.000796"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-05-07T10:50:01.478544" elapsed="15.502472"/>
+</kw>
+<doc>Prueba For</doc>
+<tag>test_uno</tag>
+<status status="PASS" start="2025-05-07T10:49:21.699364" elapsed="55.282389"/>
+</test>
+<doc>Demo de las Variables</doc>
+<status status="PASS" start="2025-05-07T10:49:21.694923" elapsed="55.287826"/>
+</suite>
+<suite id="s1-s6" name="Frame" source="F:\Documentos\WorkspaceRobotFramework\PyCharm\RobotFramework\Test_Case\Frame.robot">
+<test id="s1-s6-t1" name="Mi octavo Test" line="15">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-07T10:50:16.989682" level="INFO">https://testpages.eviltester.com/styled/frames/frames-test.html firefox</msg>
+<arg>${url} ${navegador}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-07T10:50:16.989425" elapsed="0.000328"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:50:16.990285" level="INFO">Opening browser 'firefox' to base url 'https://testpages.eviltester.com/styled/frames/frames-test.html'.</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-07T10:50:16.990035" elapsed="6.868094"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-07T10:50:23.858925" elapsed="0.369934"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.8s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-05-07T10:50:24.229376" elapsed="0.000354"/>
+</kw>
+<kw name="Select Frame" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:50:24.230330" level="INFO">Selecting frame 'name=top'.</msg>
+<arg>name=top</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="PASS" start="2025-05-07T10:50:24.230019" elapsed="1.630408"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Nested Frames Example</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-05-07T10:50:25.860951" elapsed="0.807930"/>
+</kw>
+<kw name="Unselect Frame" owner="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" start="2025-05-07T10:50:26.669250" elapsed="0.804121"/>
+</kw>
+<kw name="Select Frame" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:50:27.474215" level="INFO">Selecting frame 'name=left'.</msg>
+<arg>name=left</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="PASS" start="2025-05-07T10:50:27.473857" elapsed="1.612782"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:50:29.087877" level="INFO">Clicking element '//li[@id='left1']'.</msg>
+<arg>//li[@id='left1']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T10:50:29.087517" elapsed="1.834898"/>
+</kw>
+<kw name="Unselect Frame" owner="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" start="2025-05-07T10:50:30.923223" elapsed="0.806408"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-07T10:50:31.730145" elapsed="3.649976"/>
+</kw>
+<doc>Obtava prueba de alertas</doc>
+<tag>test_frame</tag>
+<status status="PASS" start="2025-05-07T10:50:16.988517" elapsed="18.392233"/>
+</test>
+<doc>Proyecto de pruebas para proyecto</doc>
+<status status="PASS" start="2025-05-07T10:50:16.984175" elapsed="18.397721"/>
+</suite>
+<suite id="s1-s7" name="Keywords" source="F:\Documentos\WorkspaceRobotFramework\PyCharm\RobotFramework\Test_Case\Keywords.robot">
+<test id="s1-s7-t1" name="Práctica Uno" line="26">
+<kw name="Cargar Navegador" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:50:35.391453" level="INFO">Opening browser 'firefox' to base url 'https://demoqa.com/text-box'.</msg>
+<arg>${URL}</arg>
+<arg>${NAVEGADOR}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-07T10:50:35.391113" elapsed="13.481436"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-07T10:50:48.873004" elapsed="1.066721"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:50:50.744169" level="INFO">Page title is 'DEMOQA'.</msg>
+<arg>DEMOQA</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-05-07T10:50:49.940102" elapsed="0.804263"/>
+</kw>
+<kw name="F_foto_pagina" owner="Funciones">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:50:51.720241" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Reportes/Img/inicial.png"&gt;&lt;img src="../Reportes/Img/inicial.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${ruta_fotos_pagina}/${nombre_imagen}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-05-07T10:50:50.745215" elapsed="0.975221"/>
+</kw>
+<arg>inicial.png</arg>
+<doc>Captura una captura de pantalla de toda la página con nombre personalizado.</doc>
+<status status="PASS" start="2025-05-07T10:50:50.744741" elapsed="0.975888"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-07T10:50:51.921508" level="INFO">Slept 200 milliseconds.</msg>
+<arg>${ESPERA}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-07T10:50:51.720871" elapsed="0.200754"/>
+</kw>
+<doc>Abre el navegador, maximiza la ventana y toma una captura inicial de la página.</doc>
+<status status="PASS" start="2025-05-07T10:50:35.390669" elapsed="16.531055"/>
+</kw>
+<kw name="Validar Nombre">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-07T10:50:52.123008" level="INFO">Slept 200 milliseconds.</msg>
+<arg>${ESPERA}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-07T10:50:51.922317" elapsed="0.200881"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:50:53.757327" level="INFO">Element 'id=userName' is displayed.</msg>
+<arg>id=userName</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-05-07T10:50:52.123471" elapsed="1.634078"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\nSe ingresa el nombre :: ${NOMBRE}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-05-07T10:50:53.757850" elapsed="0.000800"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:50:53.759090" level="INFO">Typing text 'Rodrigo' into text field 'id=userName'.</msg>
+<arg>id=userName</arg>
+<arg>${NOMBRE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T10:50:53.758853" elapsed="2.494436"/>
+</kw>
+<doc>Verifica visibilidad del campo nombre y lo llena con el valor definido.</doc>
+<status status="PASS" start="2025-05-07T10:50:51.922084" elapsed="4.331425"/>
+</kw>
+<kw name="Validar Correo">
+<kw name="F_texto" owner="Funciones">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${selector}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-05-07T10:50:56.254179" elapsed="1.620772"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:50:57.875814" level="INFO">Typing text 'rodrigo@gmail.com' into text field 'id=userEmail'.</msg>
+<arg>${selector}</arg>
+<arg>${valor}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T10:50:57.875290" elapsed="2.440056"/>
+</kw>
+<arg>id=userEmail</arg>
+<arg>${EMAIL}</arg>
+<doc>Espera a que el elemento sea visible y escribe el texto indicado.</doc>
+<status status="PASS" start="2025-05-07T10:50:56.253996" elapsed="4.061539"/>
+</kw>
+<doc>Llena el campo de correo usando un keyword reutilizable.</doc>
+<status status="PASS" start="2025-05-07T10:50:56.253779" elapsed="4.061846"/>
+</kw>
+<kw name="Cargar Direcciones">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:51:00.317050" level="INFO">Typing text 'Dirección uno' into text field 'id=currentAddress'.</msg>
+<arg>id=currentAddress</arg>
+<arg>${DIRECCION_1}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T10:51:00.316581" elapsed="2.438935"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-07T10:51:02.958578" level="INFO">Slept 200 milliseconds.</msg>
+<arg>${ESPERA}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-07T10:51:02.757153" elapsed="0.201832"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Cargando dirección actual :: ${DIRECCION_1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-05-07T10:51:02.959305" elapsed="0.000995"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:51:02.960591" level="INFO">Typing text 'Dirección dos' into text field 'id=permanentAddress'.</msg>
+<arg>id=permanentAddress</arg>
+<arg>${DIRECCION_2}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T10:51:02.960420" elapsed="2.444298"/>
+</kw>
+<kw name="F_foto_selector" owner="Funciones">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${selector}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-05-07T10:51:05.405552" elapsed="1.625068"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${selector}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-05-07T10:51:07.030943" elapsed="2.416694"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:51:11.062127" level="INFO">Element 'id=permanentAddress' is displayed.</msg>
+<arg>${selector}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-05-07T10:51:09.447985" elapsed="1.614287"/>
+</kw>
+<kw name="Capture Element Screenshot" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:51:12.680375" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Reportes/Img/Direccion2.png"&gt;&lt;img src="../Reportes/Img/Direccion2.png" width="400px"&gt;&lt;/a&gt;</msg>
+<arg>${selector}</arg>
+<arg>${ruta_fotos_pagina}/${nombre_imagen}</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<status status="PASS" start="2025-05-07T10:51:11.062473" elapsed="1.618087"/>
+</kw>
+<arg>id=permanentAddress</arg>
+<arg>Direccion2.png</arg>
+<doc>Captura una imagen del elemento indicado, verificando visibilidad y disponibilidad.</doc>
+<status status="PASS" start="2025-05-07T10:51:05.405111" elapsed="7.275647"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-07T10:51:12.881838" level="INFO">Slept 200 milliseconds.</msg>
+<arg>${ESPERA}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-07T10:51:12.680983" elapsed="0.200969"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:51:12.882442" level="INFO">Executing JavaScript:
+window.scrollTo(0, 200)
+Without any arguments.</msg>
+<arg>window.scrollTo(0, 200)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-05-07T10:51:12.882111" elapsed="0.808585"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-07T10:51:13.891586" level="INFO">Slept 200 milliseconds.</msg>
+<arg>${ESPERA}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-07T10:51:13.691016" elapsed="0.200700"/>
+</kw>
+<doc>Llena los campos de dirección actual y permanente, y toma capturas.</doc>
+<status status="PASS" start="2025-05-07T10:51:00.316145" elapsed="13.575673"/>
+</kw>
+<kw name="Enviar Información">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:51:13.892675" level="INFO">Executing JavaScript:
+window.scrollTo(0, document.body.scrollHeight)
+Without any arguments.</msg>
+<arg>window.scrollTo(0, document.body.scrollHeight)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-05-07T10:51:13.892396" elapsed="0.805903"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-07T10:51:16.699257" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-07T10:51:14.698718" elapsed="2.000735"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:51:17.550951" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Reportes/Img/final.png"&gt;&lt;img src="../Reportes/Img/final.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${IMG_DIR}/final.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-05-07T10:51:16.699865" elapsed="0.851192"/>
+</kw>
+<kw name="F_foto_pagina" owner="Funciones">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:51:18.407903" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Reportes/Img/final2.png"&gt;&lt;img src="../Reportes/Img/final2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${ruta_fotos_pagina}/${nombre_imagen}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-05-07T10:51:17.551472" elapsed="0.856602"/>
+</kw>
+<arg>final2.png</arg>
+<doc>Captura una captura de pantalla de toda la página con nombre personalizado.</doc>
+<status status="PASS" start="2025-05-07T10:51:17.551242" elapsed="0.857014"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:51:18.409626" level="INFO">Executing JavaScript:
+document.getElementById("adplus-anchor").style.display = "none";
+Without any arguments.</msg>
+<arg>document.getElementById("adplus-anchor").style.display = "none";</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-05-07T10:51:18.408474" elapsed="0.810607"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:51:19.219806" level="INFO">Clicking button 'id=submit'.</msg>
+<arg>id=submit</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T10:51:19.219451" elapsed="4.249444"/>
+</kw>
+<doc>Captura pantalla final, oculta anuncio y envía el formulario.</doc>
+<status status="PASS" start="2025-05-07T10:51:13.892179" elapsed="9.577122"/>
+</kw>
+<kw name="Cerrar Navegador" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-07T10:51:23.470444" elapsed="3.598029"/>
+</kw>
+<doc>Cierra el navegador al finalizar el test.</doc>
+<status status="PASS" start="2025-05-07T10:51:23.469944" elapsed="3.598819"/>
+</kw>
+<doc>Caso de prueba que automatiza el formulario de DEMOQA utilizando keywords personalizados.</doc>
+<tag>test_uno</tag>
+<status status="PASS" start="2025-05-07T10:50:35.389816" elapsed="51.679338"/>
+</test>
+<doc>Práctica de uso de Keywords personalizados para automatizar el formulario de DEMOQA.</doc>
+<status status="PASS" start="2025-05-07T10:50:35.383102" elapsed="51.687614"/>
+</suite>
+<suite id="s1-s8" name="Login Android" source="F:\Documentos\WorkspaceRobotFramework\PyCharm\RobotFramework\Test_Case\Login_Android.robot">
+<test id="s1-s8-t1" name="Login" line="6">
+<kw name="Open Chat21 Application" owner="android-res">
+<kw name="Open Application" owner="AppiumLibrary">
+<msg time="2025-05-07T10:51:29.178223" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002C6573AD150&gt;: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión')': /wd/hub/session</msg>
+<msg time="2025-05-07T10:51:31.230814" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002C6573AD9D0&gt;: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión')': /wd/hub/session</msg>
+<msg time="2025-05-07T10:51:33.281671" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002C6573AD260&gt;: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión')': /wd/hub/session</msg>
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-05-07T10:51:35.336585" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-05-07T10:51:35.336039" elapsed="0.008086">No application is open</status>
+</kw>
+<msg time="2025-05-07T10:51:35.345553" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-05-07T10:51:35.347571" level="FAIL">MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=4723): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002C6573AC380&gt;: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))</msg>
+<arg>${appium_host}</arg>
+<arg>platformName=${platform_name}</arg>
+<arg>deviceName=${deviceName}</arg>
+<arg>platformVersion=${platformVersion}</arg>
+<arg>appPackage=${appPackage}</arg>
+<arg>appActivity=${appActivity}</arg>
+<arg>automationName=${automationName}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="FAIL" start="2025-05-07T10:51:27.124999" elapsed="8.226254">MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=4723): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002C6573AC380&gt;: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-05-07T10:51:35.351413" elapsed="0.000023"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<var>${ALERT}</var>
+<arg>Wait Until Element Is Visible</arg>
+<arg>${CONTINUE-BUTTON}</arg>
+<arg>timeout=3s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" start="2025-05-07T10:51:35.351510" elapsed="0.000012"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>${ALERT} == True</arg>
+<arg>Bypass Android 10 Alerts</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="NOT RUN" start="2025-05-07T10:51:35.351759" elapsed="0.000160"/>
+</kw>
+<doc>Abre la aplicación en el dispositivo Android</doc>
+<status status="FAIL" start="2025-05-07T10:51:27.124375" elapsed="8.227757">MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=4723): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002C6573AC380&gt;: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))</status>
+</kw>
+<kw name="Signin With User" owner="android-res">
+<arg>${USER1-DETAILS}[email]</arg>
+<arg>${USER1-DETAILS}[password]</arg>
+<status status="NOT RUN" start="2025-05-07T10:51:35.352590" elapsed="0.000042"/>
+</kw>
+<kw name="Logout With User" owner="android-res">
+<doc>Cierra la sesión del usuario actual y verifica el logout</doc>
+<status status="NOT RUN" start="2025-05-07T10:51:35.353175" elapsed="0.000024"/>
+</kw>
+<kw name="Signin With User" owner="android-res">
+<arg>${USER2-DETAILS}[email]</arg>
+<arg>${USER2-DETAILS}[password]</arg>
+<status status="NOT RUN" start="2025-05-07T10:51:35.353348" elapsed="0.000015"/>
+</kw>
+<doc>Test para iniciar sesión en la app Android</doc>
+<status status="FAIL" start="2025-05-07T10:51:27.123537" elapsed="8.230150">MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=4723): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002C6573AC380&gt;: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))</status>
+</test>
+<status status="FAIL" start="2025-05-07T10:51:27.071936" elapsed="8.282573"/>
+</suite>
+<suite id="s1-s9" name="Page Google" source="F:\Documentos\WorkspaceRobotFramework\PyCharm\RobotFramework\Test_Case\Page_Google.robot">
+<kw name="Abrir Navegador" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:51:35.357821" level="INFO">Opening browser 'Chrome' to base url 'http://www.google.com/'.</msg>
+<msg time="2025-05-07T10:51:35.999736" level="WARN">The chromedriver version (134.0.6998.35) detected in PATH at C:\Python313\chromedriver.exe might not be compatible with the detected chrome version (135.0.7049.115); currently, chromedriver 135.0.7049.114 is recommended for chrome 135.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-07T10:51:35.357678" elapsed="3.391769"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-07T10:51:38.749901" elapsed="0.835896"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${SEARCH_BOX}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-05-07T10:51:39.586262" elapsed="1.631236"/>
+</kw>
+<status status="PASS" start="2025-05-07T10:51:35.357518" elapsed="5.860210"/>
+</kw>
+<test id="s1-s9-t1" name="Buscar Nintendo En Google" line="15">
+<kw name="Buscar En Google">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:51:41.219782" level="INFO">Typing text 'nintendo' into text field 'name:q'.</msg>
+<arg>${SEARCH_BOX}</arg>
+<arg>${texto}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T10:51:41.219417" elapsed="2.567575"/>
+</kw>
+<kw name="Press Key" owner="SeleniumLibrary">
+<arg>${SEARCH_BOX}</arg>
+<arg>${ENTER_KEY}</arg>
+<doc>Simulates user pressing key on element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T10:51:43.787313" elapsed="1.746551"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${texto}</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-05-07T10:51:45.534081" elapsed="0.815255"/>
+</kw>
+<arg>${SEARCH_TERM}</arg>
+<status status="PASS" start="2025-05-07T10:51:41.218783" elapsed="5.130774"/>
+</kw>
+<kw name="Verificar Resultado">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:51:58.349521" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-05-07T10:51:58.349796" level="FAIL">Text 'Nintendo' did not appear in 10 seconds.</msg>
+<arg>${texto}</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="FAIL" start="2025-05-07T10:51:46.350133" elapsed="12.025187">Text 'Nintendo' did not appear in 10 seconds.</status>
+</kw>
+<arg>Nintendo</arg>
+<status status="FAIL" start="2025-05-07T10:51:46.349904" elapsed="12.025771">Text 'Nintendo' did not appear in 10 seconds.</status>
+</kw>
+<status status="FAIL" start="2025-05-07T10:51:41.217860" elapsed="17.158383">Text 'Nintendo' did not appear in 10 seconds.</status>
+</test>
+<kw name="Cerrar Navegador" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-07T10:51:58.377871" elapsed="2.873644"/>
+</kw>
+<status status="PASS" start="2025-05-07T10:51:58.377525" elapsed="2.874186"/>
+</kw>
+<status status="FAIL" start="2025-05-07T10:51:35.355272" elapsed="25.896498"/>
+</suite>
+<suite id="s1-s10" name="Selectores" source="F:\Documentos\WorkspaceRobotFramework\PyCharm\RobotFramework\Test_Case\Selectores.robot">
+<test id="s1-s10-t1" name="Mi octavo Test" line="15">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-07T10:52:01.257148" level="INFO">https://testpages.eviltester.com/styled/basic-html-form-test.html firefox</msg>
+<arg>${url} ${navegador}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-07T10:52:01.257009" elapsed="0.000176"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:52:01.257491" level="INFO">Opening browser 'firefox' to base url 'https://testpages.eviltester.com/styled/basic-html-form-test.html'.</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-07T10:52:01.257357" elapsed="7.117480"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-07T10:52:08.375288" elapsed="1.062134"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-07T10:52:09.938742" level="INFO">Slept 500 milliseconds.</msg>
+<arg>${time}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-07T10:52:09.437994" elapsed="0.500924"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:52:10.742783" level="INFO">Page title is 'HTML Form Elements'.</msg>
+<arg>HTML Form Elements</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-05-07T10:52:09.939291" elapsed="0.803688"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-07T10:52:11.244250" level="INFO">Slept 500 milliseconds.</msg>
+<arg>${time}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-07T10:52:10.743423" elapsed="0.501020"/>
+</kw>
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:52:11.245100" level="INFO">Selecting 'rd1' from radio button 'radioval'.</msg>
+<arg>radioval</arg>
+<arg>rd1</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="PASS" start="2025-05-07T10:52:11.244882" elapsed="2.661195"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-07T10:52:14.407195" level="INFO">Slept 500 milliseconds.</msg>
+<arg>${time}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-07T10:52:13.906460" elapsed="0.501213"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-07T10:52:14.408180" elapsed="3.519941"/>
+</kw>
+<doc>Obtava prueba de validacion de radio button</doc>
+<tag>test_radio_button</tag>
+<status status="PASS" start="2025-05-07T10:52:01.256523" elapsed="16.672457"/>
+</test>
+<test id="s1-s10-t2" name="Mi noveno Test" line="28">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-07T10:52:17.931249" level="INFO">https://testpages.eviltester.com/styled/basic-html-form-test.html firefox</msg>
+<arg>${url} ${navegador}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-07T10:52:17.930937" elapsed="0.000395"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:52:17.931940" level="INFO">Opening browser 'firefox' to base url 'https://testpages.eviltester.com/styled/basic-html-form-test.html'.</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-07T10:52:17.931659" elapsed="7.038169"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-07T10:52:24.970281" elapsed="1.074555"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-07T10:52:26.546277" level="INFO">Slept 500 milliseconds.</msg>
+<arg>${time}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-07T10:52:26.045334" elapsed="0.501111"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:52:27.350556" level="INFO">Page title is 'HTML Form Elements'.</msg>
+<arg>HTML Form Elements</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-05-07T10:52:26.546867" elapsed="0.803898"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-07T10:52:27.852145" level="INFO">Slept 500 milliseconds.</msg>
+<arg>${time}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-07T10:52:27.351228" elapsed="0.501040"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:52:27.852740" level="INFO">Selecting checkbox 'checkboxes[]'.</msg>
+<arg>checkboxes[]</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T10:52:27.852567" elapsed="3.473973"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-07T10:52:31.828352" level="INFO">Slept 500 milliseconds.</msg>
+<arg>${time}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-07T10:52:31.327458" elapsed="0.501081"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:52:31.829421" level="INFO">Clicking button '//input[@value='cb2']'.</msg>
+<arg>//input[@value='cb2']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T10:52:31.829074" elapsed="2.632329"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-07T10:52:34.963322" level="INFO">Slept 500 milliseconds.</msg>
+<arg>${time}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-07T10:52:34.462075" elapsed="0.501437"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-07T10:52:34.963989" elapsed="3.551209"/>
+</kw>
+<doc>Novena prueba de validacion de check box</doc>
+<tag>test_check_box</tag>
+<status status="PASS" start="2025-05-07T10:52:17.930164" elapsed="20.585521"/>
+</test>
+<test id="s1-s10-t3" name="Mi decimo Test" line="43">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-07T10:52:38.516999" level="INFO">https://testpages.eviltester.com/styled/basic-html-form-test.html firefox</msg>
+<arg>${url} ${navegador}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-07T10:52:38.516691" elapsed="0.000369"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:52:38.517888" level="INFO">Opening browser 'firefox' to base url 'https://testpages.eviltester.com/styled/basic-html-form-test.html'.</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-07T10:52:38.517465" elapsed="7.033531"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-07T10:52:45.551509" elapsed="1.073399"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-07T10:52:47.125610" level="INFO">Slept 500 milliseconds.</msg>
+<arg>${time}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-07T10:52:46.625306" elapsed="0.501005"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:52:47.931625" level="INFO">Page title is 'HTML Form Elements'.</msg>
+<arg>HTML Form Elements</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-05-07T10:52:47.127296" elapsed="0.804518"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-07T10:52:48.433044" level="INFO">Slept 500 milliseconds.</msg>
+<arg>${time}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-07T10:52:47.932210" elapsed="0.500980"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:52:48.434611" level="INFO">Executing JavaScript:
+window.scrollTo(0, 300)
+Without any arguments.</msg>
+<arg>window.scrollTo(0, 300)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-05-07T10:52:48.433838" elapsed="0.818607"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:52:49.253173" level="INFO">Selecting options from selection list 'dropdown' by label Drop Down Item 1.</msg>
+<arg>dropdown</arg>
+<arg>Drop Down Item 1</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-05-07T10:52:49.252887" elapsed="5.906945"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-07T10:52:55.660808" level="INFO">Slept 500 milliseconds.</msg>
+<arg>${time}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-07T10:52:55.160156" elapsed="0.500936"/>
+</kw>
+<kw name="Select From List By Index" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:52:55.661719" level="INFO">Selecting options from selection list 'multipleselect[]' by index 1.</msg>
+<arg>multipleselect[]</arg>
+<arg>1</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="PASS" start="2025-05-07T10:52:55.661549" elapsed="7.482348"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-07T10:53:03.645247" level="INFO">Slept 500 milliseconds.</msg>
+<arg>${time}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-07T10:53:03.144387" elapsed="0.501023"/>
+</kw>
+<kw name="Select From List By Index" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:53:03.646138" level="INFO">Selecting options from selection list 'multipleselect[]' by index 2.</msg>
+<arg>multipleselect[]</arg>
+<arg>2</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="PASS" start="2025-05-07T10:53:03.645855" elapsed="8.283583"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-07T10:53:12.430486" level="INFO">Slept 500 milliseconds.</msg>
+<arg>${time}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-07T10:53:11.929877" elapsed="0.500805"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:53:12.431240" level="INFO">Selecting options from selection list 'multipleselect[]' by value ms3.</msg>
+<arg>multipleselect[]</arg>
+<arg>ms3</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2025-05-07T10:53:12.431054" elapsed="4.022521"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-07T10:53:16.954976" level="INFO">Slept 500 milliseconds.</msg>
+<arg>${time}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-07T10:53:16.454172" elapsed="0.500974"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-07T10:53:16.955601" elapsed="3.533953"/>
+</kw>
+<doc>Decima prueba de validacion de slectores</doc>
+<tag>test_select</tag>
+<status status="PASS" start="2025-05-07T10:52:38.516229" elapsed="41.973863"/>
+</test>
+<doc>Proyecto de pruebas para proyecto</doc>
+<status status="PASS" start="2025-05-07T10:52:01.252914" elapsed="79.237949"/>
+</suite>
+<suite id="s1-s11" name="Switch Browser" source="F:\Documentos\WorkspaceRobotFramework\PyCharm\RobotFramework\Test_Case\Switch_Browser.robot">
+<test id="s1-s11-t1" name="Mi primer Test" line="15">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-07T10:53:20.499133" level="INFO">https://demoqa.com/ firefox</msg>
+<arg>${url} ${navegador}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-07T10:53:20.498790" elapsed="0.000438"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:53:20.499924" level="INFO">Opening browser 'firefox' to base url 'https://demoqa.com/'.</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-07T10:53:20.499603" elapsed="13.694789"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-07T10:53:34.194974" elapsed="1.075302"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.8s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-05-07T10:53:35.270984" elapsed="0.000382"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:53:35.272115" level="INFO">Opening browser 'firefox' to base url 'https://testpages.eviltester.com/styled/index.html'.</msg>
+<arg>https://testpages.eviltester.com/styled/index.html</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-07T10:53:35.271725" elapsed="7.584671"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-07T10:53:42.857283" elapsed="1.073078"/>
+</kw>
+<kw name="Switch Browser" owner="SeleniumLibrary">
+<arg>1</arg>
+<doc>Switches between active browsers using ``index_or_alias``.</doc>
+<status status="PASS" start="2025-05-07T10:53:43.930711" elapsed="0.000169"/>
+</kw>
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:53:48.006030" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002C6573AF790&gt;: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión')': /session/873c8a1f-c703-448b-aa84-0bc677d3a537/title</msg>
+<msg time="2025-05-07T10:53:52.103736" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002C6573AF9B0&gt;: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión')': /session/873c8a1f-c703-448b-aa84-0bc677d3a537/title</msg>
+<msg time="2025-05-07T10:53:56.192649" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002C6584746B0&gt;: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión')': /session/873c8a1f-c703-448b-aa84-0bc677d3a537/title</msg>
+<msg time="2025-05-07T10:54:04.368635" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002C658474C00&gt;: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión')': /session/873c8a1f-c703-448b-aa84-0bc677d3a537/screenshot</msg>
+<msg time="2025-05-07T10:54:08.436553" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002C658474E20&gt;: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión')': /session/873c8a1f-c703-448b-aa84-0bc677d3a537/screenshot</msg>
+<msg time="2025-05-07T10:54:12.524059" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002C658475040&gt;: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión')': /session/873c8a1f-c703-448b-aa84-0bc677d3a537/screenshot</msg>
+<msg time="2025-05-07T10:54:16.629867" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: HTTPConnectionPool(host='localhost', port=56805): Max retries exceeded with url: /session/873c8a1f-c703-448b-aa84-0bc677d3a537/screenshot (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002C658475260&gt;: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))</msg>
+<msg time="2025-05-07T10:54:16.631412" level="FAIL">MaxRetryError: HTTPConnectionPool(host='localhost', port=56805): Max retries exceeded with url: /session/873c8a1f-c703-448b-aa84-0bc677d3a537/title (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002C6584748D0&gt;: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))</msg>
+<var>${titulo}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="FAIL" start="2025-05-07T10:53:43.931016" elapsed="32.709206">MaxRetryError: HTTPConnectionPool(host='localhost', port=56805): Max retries exceeded with url: /session/873c8a1f-c703-448b-aa84-0bc677d3a537/title (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002C6584748D0&gt;: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))</status>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${\n}Titulo de la pagina 1 :: ${titulo}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-05-07T10:54:16.640629" elapsed="0.000058"/>
+</kw>
+<kw name="Switch Browser" owner="SeleniumLibrary">
+<arg>2</arg>
+<doc>Switches between active browsers using ``index_or_alias``.</doc>
+<status status="NOT RUN" start="2025-05-07T10:54:16.640969" elapsed="0.000041"/>
+</kw>
+<kw name="Get Title" owner="SeleniumLibrary">
+<var>${titulo}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="NOT RUN" start="2025-05-07T10:54:16.641258" elapsed="0.000039"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${\n}Titulo de la pagina 2 :: ${titulo}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-05-07T10:54:16.641504" elapsed="0.000041"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="NOT RUN" start="2025-05-07T10:54:16.641760" elapsed="0.000040"/>
+</kw>
+<doc>switch browser</doc>
+<tag>test_uno</tag>
+<status status="FAIL" start="2025-05-07T10:53:20.498041" elapsed="56.144045">MaxRetryError: HTTPConnectionPool(host='localhost', port=56805): Max retries exceeded with url: /session/873c8a1f-c703-448b-aa84-0bc677d3a537/title (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002C6584748D0&gt;: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))</status>
+</test>
+<test id="s1-s11-t2" name="Mi segundo Test" line="38">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-07T10:54:16.643713" level="INFO">https://demoqa.com/ firefox</msg>
+<arg>${url} ${navegador}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-07T10:54:16.643557" elapsed="0.000196"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:54:16.644436" level="INFO">Opening browser 'firefox' to base url 'https://demoqa.com/'.</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-07T10:54:16.644139" elapsed="13.445635"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-07T10:54:30.090440" elapsed="1.099906"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.8s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-05-07T10:54:31.190965" elapsed="0.000387"/>
+</kw>
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:54:31.997138" level="INFO">${titulo1} = DEMOQA</msg>
+<var>${titulo1}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2025-05-07T10:54:31.191811" elapsed="0.805415"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${\n}Titulo de la pagina 1 :: ${titulo1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-05-07T10:54:31.997963" elapsed="0.000787"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:54:31.999370" level="INFO">Opening url 'https://testpages.eviltester.com/styled/index.html'</msg>
+<arg>https://testpages.eviltester.com/styled/index.html</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-05-07T10:54:31.999159" elapsed="2.120222"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-07T10:54:34.119948" elapsed="0.805095"/>
+</kw>
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:54:35.730721" level="INFO">${titulo2} = Web Testing and Automation Practice Application Pages</msg>
+<var>${titulo2}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2025-05-07T10:54:34.925636" elapsed="0.805192"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${\n}Titulo de la pagina 2 :: ${titulo2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-05-07T10:54:35.731396" elapsed="0.000328"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-07T10:54:38.732839" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-07T10:54:35.731966" elapsed="3.001056"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${\n}Regresando pagina 1 :: ${titulo1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-05-07T10:54:38.733403" elapsed="0.000411"/>
+</kw>
+<kw name="Go Back" owner="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" start="2025-05-07T10:54:38.734695" elapsed="0.841166"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-07T10:54:42.578069" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-07T10:54:39.576895" elapsed="3.001375"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-05-07T10:54:42.578837" elapsed="11.352533"/>
+</kw>
+<doc>switch browser go to</doc>
+<tag>test_dos</tag>
+<status status="PASS" start="2025-05-07T10:54:16.642953" elapsed="37.289051"/>
+</test>
+<doc>Proyecto de pruebas para proyecto</doc>
+<status status="FAIL" start="2025-05-07T10:53:20.491825" elapsed="93.440881"/>
+</suite>
+<suite id="s1-s12" name="Test uno" source="F:\Documentos\WorkspaceRobotFramework\PyCharm\RobotFramework\Test_Case\Test_uno.robot">
+<test id="s1-s12-t1" name="Mi primer Test" line="18">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:54:53.938791" level="INFO">Opening browser 'firefox' to base url 'https://demoqa.com/text-box'.</msg>
+<arg>https://demoqa.com/text-box</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-07T10:54:53.938509" elapsed="25.687228"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-07T10:55:19.626329" elapsed="1.067134"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-07T10:55:22.694465" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-07T10:55:20.694015" elapsed="2.000621"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:55:22.695900" level="INFO">Typing text 'Rodrigo' into text field 'id=userName'.</msg>
+<arg>id=userName</arg>
+<arg>Rodrigo</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T10:55:22.695434" elapsed="2.485851"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:55:25.181804" level="INFO">Typing text 'rodrigo@gmail.com' into text field 'id=userEmail'.</msg>
+<arg>id=userEmail</arg>
+<arg>rodrigo@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T10:55:25.181618" elapsed="2.436829"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:55:27.619609" level="INFO">Typing text 'direccion uno' into text field 'id=currentAddress'.</msg>
+<arg>id=currentAddress</arg>
+<arg>direccion uno</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T10:55:27.619207" elapsed="2.429247"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:55:30.049902" level="INFO">Executing JavaScript:
+window.scrollTo(0, 300)
+Without any arguments.</msg>
+<arg>window.scrollTo(0, 300)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-05-07T10:55:30.049093" elapsed="0.813176"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-07T10:55:32.863383" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-07T10:55:30.862826" elapsed="2.000743"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:55:32.864390" level="INFO">Typing text 'direccion dos' into text field 'id=permanentAddress'.</msg>
+<arg>id=permanentAddress</arg>
+<arg>direccion dos</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T10:55:32.864068" elapsed="2.433811"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:55:35.298842" level="INFO">Clicking button 'id=submit'.</msg>
+<arg>id=submit</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T10:55:35.298553" elapsed="4.239040"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-07T10:55:44.538928" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-07T10:55:39.538233" elapsed="5.000868"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-07T10:55:44.539535" elapsed="3.836918"/>
+</kw>
+<doc>Primera prueba del sistema en firefox</doc>
+<tag>test_firefox</tag>
+<status status="PASS" start="2025-05-07T10:54:53.937968" elapsed="54.439048"/>
+</test>
+<test id="s1-s12-t2" name="Mi segundo Test" line="33">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:55:48.378780" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/text-box'.</msg>
+<msg time="2025-05-07T10:55:48.832804" level="WARN">The chromedriver version (134.0.6998.35) detected in PATH at C:\Python313\chromedriver.exe might not be compatible with the detected chrome version (135.0.7049.115); currently, chromedriver 135.0.7049.114 is recommended for chrome 135.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>https://demoqa.com/text-box</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-07T10:55:48.378545" elapsed="5.430942"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-07T10:55:53.810049" elapsed="0.907567"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-07T10:55:56.719048" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-07T10:55:54.718108" elapsed="2.001232"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:55:56.720081" level="INFO">Typing text 'Rodrigo' into text field 'id=userName'.</msg>
+<arg>id=userName</arg>
+<arg>Rodrigo</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T10:55:56.719771" elapsed="2.506934"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:55:59.227533" level="INFO">Typing text 'rodrigo@gmail.com' into text field 'id=userEmail'.</msg>
+<arg>id=userEmail</arg>
+<arg>rodrigo@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T10:55:59.227180" elapsed="2.537917"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:56:01.765973" level="INFO">Typing text 'direccion uno' into text field 'id=currentAddress'.</msg>
+<arg>id=currentAddress</arg>
+<arg>direccion uno</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T10:56:01.765573" elapsed="2.506869"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:56:04.273335" level="INFO">Executing JavaScript:
+window.scrollTo(0, 300)
+Without any arguments.</msg>
+<arg>window.scrollTo(0, 300)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-05-07T10:56:04.272861" elapsed="0.809507"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-07T10:56:07.083003" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-07T10:56:05.082712" elapsed="2.000412"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:56:07.083643" level="INFO">Typing text 'direccion dos' into text field 'id=permanentAddress'.</msg>
+<arg>id=permanentAddress</arg>
+<arg>direccion dos</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T10:56:07.083446" elapsed="2.481265"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:56:09.565473" level="INFO">Clicking button 'id=submit'.</msg>
+<arg>id=submit</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T10:56:09.565250" elapsed="4.177739"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-07T10:56:18.745304" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-07T10:56:13.743606" elapsed="5.001814"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-07T10:56:18.746069" elapsed="2.915261"/>
+</kw>
+<doc>Segunda prueba del sistema en crhome</doc>
+<tag>test_chrome</tag>
+<status status="PASS" start="2025-05-07T10:55:48.377644" elapsed="33.284134"/>
+</test>
+<test id="s1-s12-t3" name="Mi tercer Test" line="49">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-07T10:56:21.663539" level="INFO">https://demoqa.com/text-box firefox Rodrigo Prueba rodrigo@gmail.com direccion uno direccion dos</msg>
+<arg>${url} ${navegador} ${nombre} ${apellido} ${email} ${currentAddress} ${permanentAddress}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-07T10:56:21.663340" elapsed="0.000237"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:56:21.664159" level="INFO">Opening browser 'firefox' to base url 'https://demoqa.com/text-box'.</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-07T10:56:21.663791" elapsed="25.424823"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-07T10:56:47.089287" elapsed="1.068106"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-07T10:56:50.158278" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-07T10:56:48.157826" elapsed="2.000649"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:56:50.159537" level="INFO">Typing text 'Rodrigo Prueba' into text field 'id=userName'.</msg>
+<arg>id=userName</arg>
+<arg>${nombre} ${apellido}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T10:56:50.159125" elapsed="2.480221"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:56:52.640460" level="INFO">Typing text 'rodrigo@gmail.com' into text field 'id=userEmail'.</msg>
+<arg>id=userEmail</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T10:56:52.639979" elapsed="2.435158"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:56:55.076181" level="INFO">Typing text 'direccion uno' into text field 'id=currentAddress'.</msg>
+<arg>id=currentAddress</arg>
+<arg>${currentAddress}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T10:56:55.075700" elapsed="2.437370"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:56:57.513830" level="INFO">Executing JavaScript:
+window.scrollTo(0, 300)
+Without any arguments.</msg>
+<arg>window.scrollTo(0, 300)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-05-07T10:56:57.513493" elapsed="0.808351"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-07T10:57:00.322751" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-07T10:56:58.322335" elapsed="2.000607"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:57:00.324102" level="INFO">Typing text 'direccion dos' into text field 'id=permanentAddress'.</msg>
+<arg>id=permanentAddress</arg>
+<arg>${permanentAddress}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T10:57:00.323569" elapsed="2.431443"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:57:02.755854" level="INFO">Clicking button 'id=submit'.</msg>
+<arg>id=submit</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T10:57:02.755644" elapsed="4.243381"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-07T10:57:12.000226" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-07T10:57:06.999550" elapsed="5.000792"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-07T10:57:12.000754" elapsed="3.571530"/>
+</kw>
+<doc>Tercera prueba del sistema con variables</doc>
+<tag>test_variables</tag>
+<status status="PASS" start="2025-05-07T10:56:21.663006" elapsed="53.909640"/>
+</test>
+<test id="s1-s12-t4" name="Mi cuarto Test" line="67">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-05-07T10:57:15.573517" level="INFO">${a} = 20</msg>
+<var>${a}</var>
+<arg>20</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-05-07T10:57:15.573377" elapsed="0.000190"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-05-07T10:57:15.574171" level="INFO">${b} = 30</msg>
+<var>${b}</var>
+<arg>30</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-05-07T10:57:15.573947" elapsed="0.000615"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-05-07T10:57:15.575187" level="INFO">${c} = 50</msg>
+<var>${c}</var>
+<arg>${a}+${b}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-05-07T10:57:15.574847" elapsed="0.000379"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${c}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-05-07T10:57:15.575437" elapsed="0.000676"/>
+</kw>
+<doc>Cuarta Prueba variables locales</doc>
+<tag>test_variables_locales</tag>
+<status status="PASS" start="2025-05-07T10:57:15.573087" elapsed="0.003246"/>
+</test>
+<test id="s1-s12-t5" name="Mi quinto test" line="76">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-07T10:57:15.578510" level="INFO">https://demoqa.com/text-box firefox Rodrigo Prueba rodrigo@gmail.com direccion uno direccion dos</msg>
+<arg>${url} ${navegador} ${nombre} ${apellido} ${email} ${currentAddress} ${permanentAddress}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-07T10:57:15.578268" elapsed="0.000289"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:57:15.578994" level="INFO">Opening browser 'firefox' to base url 'https://demoqa.com/text-box'.</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-07T10:57:15.578797" elapsed="13.150904"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-07T10:57:28.730047" elapsed="1.061804"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-07T10:57:31.792749" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-07T10:57:29.792347" elapsed="2.000568"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:57:32.596812" level="INFO">Page title is 'DEMOQA'.</msg>
+<arg>DEMOQA</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-05-07T10:57:31.793343" elapsed="0.803682"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-07T10:57:33.597877" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-07T10:57:32.597464" elapsed="1.000614"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-07T10:57:33.598648" elapsed="3.724610"/>
+</kw>
+<doc>Validando el titulo de la pagina</doc>
+<tag>test_titulo</tag>
+<status status="PASS" start="2025-05-07T10:57:15.577853" elapsed="21.745820"/>
+</test>
+<doc>Proyecto de pruebas para proyecto</doc>
+<status status="PASS" start="2025-05-07T10:54:53.933159" elapsed="163.391739"/>
+</suite>
+<suite id="s1-s13" name="Tiempos" source="F:\Documentos\WorkspaceRobotFramework\PyCharm\RobotFramework\Test_Case\Tiempos.robot">
+<test id="s1-s13-t1" name="Mi octavo Test" line="15">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-07T10:57:37.332735" level="INFO">https://testpages.eviltester.com/styled/basic-html-form-test.html firefox</msg>
+<arg>${url} ${navegador}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-07T10:57:37.332496" elapsed="0.000347"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:57:37.333546" level="INFO">Opening browser 'firefox' to base url 'https://testpages.eviltester.com/styled/basic-html-form-test.html'.</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-07T10:57:37.333228" elapsed="6.904282"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-07T10:57:44.238071" elapsed="1.069070"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.5s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-05-07T10:57:45.307461" elapsed="0.000216"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Basic HTML Form Example</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-05-07T10:57:45.308106" elapsed="0.515924"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:57:46.328698" level="INFO">Page title is 'HTML Form Elements'.</msg>
+<arg>HTML Form Elements</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-05-07T10:57:45.824518" elapsed="0.504395"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>//p[contains(text(),'Submit this simple HTML form will POST your detail')]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-05-07T10:57:46.329451" elapsed="0.504975"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>name=username</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-05-07T10:57:46.835023" elapsed="1.027496"/>
+</kw>
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:57:47.863047" level="INFO">Selecting 'rd1' from radio button 'radioval'.</msg>
+<arg>radioval</arg>
+<arg>rd1</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="PASS" start="2025-05-07T10:57:47.862880" elapsed="1.748864"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-07T10:57:49.612404" elapsed="3.276476"/>
+</kw>
+<doc>Obtava prueba de validacion de radio button</doc>
+<tag>test_radio_button</tag>
+<status status="PASS" start="2025-05-07T10:57:37.331953" elapsed="15.557257"/>
+</test>
+<test id="s1-s13-t2" name="Mi noveno Test" line="34">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-07T10:57:52.890399" level="INFO">https://testpages.eviltester.com/styled/basic-html-form-test.html firefox</msg>
+<arg>${url} ${navegador}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-07T10:57:52.890180" elapsed="0.000272"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:57:52.891186" level="INFO">Opening browser 'firefox' to base url 'https://testpages.eviltester.com/styled/basic-html-form-test.html'.</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-07T10:57:52.890875" elapsed="6.742476"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-07T10:57:59.633681" elapsed="0.778101"/>
+</kw>
+<kw name="Get Selenium Timeout" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:58:00.412524" level="INFO">${tiempo} = 5 seconds</msg>
+<var>${tiempo}</var>
+<doc>Gets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2025-05-07T10:58:00.412263" elapsed="0.000302"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${tiempo}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-05-07T10:58:00.412921" elapsed="0.000398"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>15</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2025-05-07T10:58:00.413547" elapsed="0.503921"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:58:01.422126" level="INFO">Page title is 'HTML Form Elements'.</msg>
+<arg>HTML Form Elements</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-05-07T10:58:00.918313" elapsed="0.504040"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:58:01.423161" level="INFO">Selecting checkbox 'checkboxes[]'.</msg>
+<arg>checkboxes[]</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T10:58:01.422851" elapsed="2.275814"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:58:03.699869" level="INFO">Clicking button '//input[@value='cb2']'.</msg>
+<arg>//input[@value='cb2']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T10:58:03.699288" elapsed="1.734156"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-07T10:58:05.434168" elapsed="3.191099"/>
+</kw>
+<doc>Novena prueba de validacion de check box</doc>
+<tag>test_check_box</tag>
+<status status="PASS" start="2025-05-07T10:57:52.889569" elapsed="15.736181"/>
+</test>
+<test id="s1-s13-t3" name="Mi decimo Test" line="50">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-07T10:58:08.627961" level="INFO">https://testpages.eviltester.com/styled/basic-html-form-test.html firefox</msg>
+<arg>${url} ${navegador}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-07T10:58:08.627672" elapsed="0.000359"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:58:08.628678" level="INFO">Opening browser 'firefox' to base url 'https://testpages.eviltester.com/styled/basic-html-form-test.html'.</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-07T10:58:08.628453" elapsed="6.942973"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-07T10:58:15.572164" elapsed="0.778723"/>
+</kw>
+<kw name="Get Selenium Implicit Wait" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:58:16.351771" level="INFO">${tiempo} = 10 seconds</msg>
+<var>${tiempo}</var>
+<doc>Gets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-05-07T10:58:16.351446" elapsed="0.000374"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${tiempo}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-05-07T10:58:16.352130" elapsed="0.000207"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>30</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-05-07T10:58:16.352450" elapsed="0.504510"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:58:17.361572" level="INFO">Page title is 'HTML Form Elements'.</msg>
+<arg>HTML Form Elements</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-05-07T10:58:16.857429" elapsed="0.504340"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:58:17.362843" level="INFO">Executing JavaScript:
+window.scrollTo(0, 300)
+Without any arguments.</msg>
+<arg>window.scrollTo(0, 300)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-05-07T10:58:17.362274" elapsed="0.518931"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:58:17.881966" level="INFO">Selecting options from selection list 'dropdown' by label Drop Down Item 1.</msg>
+<arg>dropdown</arg>
+<arg>Drop Down Item 1</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-05-07T10:58:17.881650" elapsed="3.799365"/>
+</kw>
+<kw name="Select From List By Index" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:58:21.681798" level="INFO">Selecting options from selection list 'multipleselect[]' by index 1.</msg>
+<arg>multipleselect[]</arg>
+<arg>1</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="PASS" start="2025-05-07T10:58:21.681487" elapsed="4.800066"/>
+</kw>
+<kw name="Select From List By Index" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:58:26.482443" level="INFO">Selecting options from selection list 'multipleselect[]' by index 2.</msg>
+<arg>multipleselect[]</arg>
+<arg>2</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="PASS" start="2025-05-07T10:58:26.482109" elapsed="5.294720"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:58:31.777966" level="INFO">Selecting options from selection list 'multipleselect[]' by value ms3.</msg>
+<arg>multipleselect[]</arg>
+<arg>ms3</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2025-05-07T10:58:31.777613" elapsed="2.526960"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-07T10:58:34.305170" elapsed="3.160147"/>
+</kw>
+<doc>Decima prueba de validacion de slectores</doc>
+<tag>test_select</tag>
+<status status="PASS" start="2025-05-07T10:58:08.626416" elapsed="28.839576"/>
+</test>
+<doc>Proyecto de pruebas para proyecto</doc>
+<status status="PASS" start="2025-05-07T10:57:37.327942" elapsed="60.139774"/>
+</suite>
+<suite id="s1-s14" name="Valida Login" source="F:\Documentos\WorkspaceRobotFramework\PyCharm\RobotFramework\Test_Case\Valida_Login.robot">
+<test id="s1-s14-t1" name="Login uno" line="12">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:58:37.474420" level="INFO">Opening browser 'firefox' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-07T10:58:37.474071" elapsed="7.482696"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-07T10:58:44.957366" elapsed="0.771095"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:58:46.232251" level="INFO">Page title is 'OrangeHRM'.</msg>
+<arg>OrangeHRM</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-05-07T10:58:45.728977" elapsed="0.503472"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-05-07T10:58:46.233142" elapsed="0.505197"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.3s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-05-07T10:58:46.739270" elapsed="0.000438"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:58:46.741040" level="INFO">Typing text 'rodrigo' into text field 'name=username'.</msg>
+<arg>name=username</arg>
+<arg>rodrigo</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T10:58:46.740624" elapsed="0.947874"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:58:47.689479" level="INFO">Typing text '123345' into text field 'name=password'.</msg>
+<arg>name=password</arg>
+<arg>123345</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T10:58:47.689092" elapsed="0.926228"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:58:48.616055" level="INFO">Clicking button '//button[normalize-space()='Login']'.</msg>
+<arg>//button[normalize-space()='Login']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T10:58:48.615778" elapsed="2.481493"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//div[@role='alert']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-05-07T10:58:51.097799" elapsed="0.925191"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Primera validación ok datos erroneos</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-05-07T10:58:52.023557" elapsed="0.000306"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Invalid credentials</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-05-07T10:58:52.024346" elapsed="0.308734"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Menssaje valido = Invalid credentials</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-05-07T10:58:52.333644" elapsed="0.000554"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-07T10:58:54.335325" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-07T10:58:52.334603" elapsed="2.000895"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-07T10:58:54.335942" elapsed="3.021063"/>
+</kw>
+<doc>Prueba uno login datos incorrectos</doc>
+<tag>login_uno</tag>
+<status status="PASS" start="2025-05-07T10:58:37.473388" elapsed="19.884273"/>
+</test>
+<test id="s1-s14-t2" name="Login dos" line="33">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:58:57.359464" level="INFO">Opening browser 'firefox' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-07T10:58:57.359086" elapsed="6.958743"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-07T10:59:04.318172" elapsed="0.586054"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:59:05.209205" level="INFO">Page title is 'OrangeHRM'.</msg>
+<arg>OrangeHRM</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-05-07T10:59:04.904791" elapsed="0.304644"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-05-07T10:59:05.209961" elapsed="0.303805"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.3s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-05-07T10:59:05.514237" elapsed="0.000316"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:59:05.515315" level="INFO">Typing text 'Admin' into text field 'name=username'.</msg>
+<arg>name=username</arg>
+<arg>Admin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T10:59:05.514959" elapsed="0.957453"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:59:06.473356" level="INFO">Typing text '123345' into text field 'name=password'.</msg>
+<arg>name=password</arg>
+<arg>123345</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T10:59:06.472966" elapsed="0.936215"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:59:07.409768" level="INFO">Clicking button '//button[normalize-space()='Login']'.</msg>
+<arg>//button[normalize-space()='Login']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T10:59:07.409582" elapsed="2.327182"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//div[@role='alert']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-05-07T10:59:09.737567" elapsed="0.624389"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Segunda validación ok datos erroneos</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-05-07T10:59:10.362773" elapsed="0.000518"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Invalid credentials</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-05-07T10:59:10.363687" elapsed="0.308093"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Menssaje valido = Invalid credentials</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-05-07T10:59:10.672328" elapsed="0.000567"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-07T10:59:12.673636" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-07T10:59:10.673327" elapsed="2.000475"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-07T10:59:12.674131" elapsed="3.054382"/>
+</kw>
+<doc>Campo usuario ok nombre mal</doc>
+<tag>login_dos</tag>
+<status status="PASS" start="2025-05-07T10:58:57.358416" elapsed="18.370712"/>
+</test>
+<test id="s1-s14-t3" name="Login tres" line="54">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:59:15.731203" level="INFO">Opening browser 'firefox' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-07T10:59:15.730845" elapsed="7.110921"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-07T10:59:22.842193" elapsed="0.578308"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:59:23.725069" level="INFO">Page title is 'OrangeHRM'.</msg>
+<arg>OrangeHRM</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-05-07T10:59:23.420964" elapsed="0.304264"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-05-07T10:59:23.726890" elapsed="0.305561"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.3s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-05-07T10:59:24.032844" elapsed="0.000188"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:59:24.033381" level="INFO">Typing text 'rodrigo' into text field 'name=username'.</msg>
+<arg>name=username</arg>
+<arg>rodrigo</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T10:59:24.033248" elapsed="0.950073"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:59:24.984197" level="INFO">Typing text 'admin123' into text field 'name=password'.</msg>
+<arg>name=password</arg>
+<arg>admin123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T10:59:24.983851" elapsed="0.923085"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:59:25.907855" level="INFO">Clicking button '//button[normalize-space()='Login']'.</msg>
+<arg>//button[normalize-space()='Login']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T10:59:25.907443" elapsed="2.079945"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//div[@role='alert']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-05-07T10:59:27.988096" elapsed="0.622410"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Tercera validación ok datos erroneos</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-05-07T10:59:28.611012" elapsed="0.000378"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Invalid credentials</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-05-07T10:59:28.611724" elapsed="0.307429"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Menssaje valido = Invalid credentials</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-05-07T10:59:28.919851" elapsed="0.000643"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-07T10:59:30.921709" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-07T10:59:28.920913" elapsed="2.001011"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-07T10:59:30.922517" elapsed="3.221547"/>
+</kw>
+<doc>Campo password ok usuario erroneo</doc>
+<tag>login_tres</tag>
+<status status="PASS" start="2025-05-07T10:59:15.730129" elapsed="18.414666"/>
+</test>
+<test id="s1-s14-t4" name="Login cuatro" line="76">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:59:34.146781" level="INFO">Opening browser 'firefox' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-07T10:59:34.146322" elapsed="7.135091"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-07T10:59:41.281854" elapsed="0.566790"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:59:42.153617" level="INFO">Page title is 'OrangeHRM'.</msg>
+<arg>OrangeHRM</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-05-07T10:59:41.849248" elapsed="0.304561"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-05-07T10:59:42.154494" elapsed="0.304490"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.3s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-05-07T10:59:42.459491" elapsed="0.000279"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-05-07T10:59:42.460483" level="INFO">${name} = </msg>
+<var>${name}</var>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-05-07T10:59:42.460176" elapsed="0.000365"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:59:42.461226" level="INFO">Typing text '' into text field 'name=username'.</msg>
+<arg>name=username</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T10:59:42.460877" elapsed="0.941577"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:59:43.403928" level="INFO">Typing text 'admin123' into text field 'name=password'.</msg>
+<arg>name=password</arg>
+<arg>admin123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T10:59:43.403512" elapsed="0.941475"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-07T10:59:44.345863" level="INFO">Clicking button '//button[normalize-space()='Login']'.</msg>
+<arg>//button[normalize-space()='Login']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T10:59:44.345446" elapsed="1.765076"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2025-05-07T11:00:07.516964" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-05-07T11:00:07.517312" level="FAIL">Element '//div[@role='alert']' not visible after 15 seconds.</msg>
+<arg>//div[@role='alert']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2025-05-07T10:59:46.111576" elapsed="21.408565">Element '//div[@role='alert']' not visible after 15 seconds.</status>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Cuarta validación ok datos erroneos</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-05-07T11:00:07.520653" elapsed="0.000057"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Username cannot be empty</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2025-05-07T11:00:07.521040" elapsed="0.000031"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Menssaje valido = Username cannot be empty</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2025-05-07T11:00:07.521230" elapsed="0.000028"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-05-07T11:00:07.521454" elapsed="0.000018"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2025-05-07T11:00:07.521847" elapsed="0.000061"/>
+</kw>
+<doc>Campo usuario vacio password ok</doc>
+<tag>login_cuatro</tag>
+<status status="FAIL" start="2025-05-07T10:59:34.145637" elapsed="33.376630">Element '//div[@role='alert']' not visible after 15 seconds.</status>
+</test>
+<test id="s1-s14-t5" name="Login cinco" line="98">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-07T11:00:07.524053" level="INFO">Opening browser 'firefox' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-07T11:00:07.523565" elapsed="7.117606"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-07T11:00:14.641710" elapsed="0.594053"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-05-07T11:00:15.542435" level="INFO">Page title is 'OrangeHRM'.</msg>
+<arg>OrangeHRM</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-05-07T11:00:15.237253" elapsed="0.305345"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-05-07T11:00:15.542982" elapsed="0.608124"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>${t}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-05-07T11:00:16.151466" elapsed="0.000219"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-05-07T11:00:16.152375" level="INFO">${user} = Admin</msg>
+<var>${user}</var>
+<arg>Admin</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-05-07T11:00:16.152022" elapsed="0.000419"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-05-07T11:00:16.153205" level="INFO">${pass} = </msg>
+<var>${pass}</var>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-05-07T11:00:16.152948" elapsed="0.000303"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-07T11:00:16.153897" level="INFO">Typing text 'Admin' into text field 'name=username'.</msg>
+<arg>name=username</arg>
+<arg>${user}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T11:00:16.153550" elapsed="0.356858"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-07T11:00:16.511391" level="INFO">Typing text '' into text field 'name=password'.</msg>
+<arg>name=password</arg>
+<arg>${pass}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T11:00:16.511001" elapsed="0.338673"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-07T11:00:16.850434" level="INFO">Clicking button '//button[normalize-space()='Login']'.</msg>
+<arg>//button[normalize-space()='Login']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T11:00:16.850252" elapsed="0.756420"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//span[@class='oxd-text oxd-text--span oxd-input-field-error-message oxd-input-group__message']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-05-07T11:00:17.607079" elapsed="0.223569"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Quinto error encontrado OK</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-05-07T11:00:17.831053" elapsed="0.000588"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Required</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-05-07T11:00:17.831868" elapsed="0.108668"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Error esperado ok = Password Required</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-05-07T11:00:17.940925" elapsed="0.000353"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-07T11:00:17.941480" elapsed="3.005402"/>
+</kw>
+<doc>Validando user ok  y password vacio</doc>
+<tag>login_cinco</tag>
+<status status="PASS" start="2025-05-07T11:00:07.522964" elapsed="13.424703"/>
+</test>
+<test id="s1-s14-t6" name="Login seis" line="120">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-07T11:00:20.949975" level="INFO">Opening browser 'firefox' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-07T11:00:20.949578" elapsed="6.990490"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-07T11:00:27.941084" elapsed="0.397081"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-05-07T11:00:28.442573" level="INFO">Page title is 'OrangeHRM'.</msg>
+<arg>OrangeHRM</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-05-07T11:00:28.339250" elapsed="0.103522"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-05-07T11:00:28.443403" elapsed="0.208917"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>${t}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-05-07T11:00:28.652876" elapsed="0.000448"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-05-07T11:00:28.654102" level="INFO">${user} = </msg>
+<var>${user}</var>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-05-07T11:00:28.653735" elapsed="0.000430"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-05-07T11:00:28.654619" level="INFO">${pass} = </msg>
+<var>${pass}</var>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-05-07T11:00:28.654444" elapsed="0.000213"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-07T11:00:28.655278" level="INFO">Typing text '' into text field 'name=username'.</msg>
+<arg>name=username</arg>
+<arg>${user}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T11:00:28.654962" elapsed="0.337136"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-07T11:00:28.992642" level="INFO">Typing text '' into text field 'name=password'.</msg>
+<arg>name=password</arg>
+<arg>${pass}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T11:00:28.992421" elapsed="0.322527"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-07T11:00:29.315648" level="INFO">Clicking button '//button[normalize-space()='Login']'.</msg>
+<arg>//button[normalize-space()='Login']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T11:00:29.315428" elapsed="0.786965"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//div[@class='orangehrm-login-slot-wrapper']//div[1]//div[1]//span[1]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-05-07T11:00:30.103001" elapsed="0.223890"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Sexto error encontrado OK</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-05-07T11:00:30.327643" elapsed="0.000498"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Required</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-05-07T11:00:30.328537" elapsed="0.106096"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Error esperado ok = Username cannot be empty</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-05-07T11:00:30.434964" elapsed="0.000304"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-07T11:00:30.436105" elapsed="3.006352"/>
+</kw>
+<doc>Validando user vacio  y password vacio</doc>
+<tag>login_seis</tag>
+<status status="PASS" start="2025-05-07T11:00:20.948755" elapsed="12.494250"/>
+</test>
+<test id="s1-s14-t7" name="Login siete" line="142">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-07T11:00:33.444985" level="INFO">Opening browser 'firefox' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-07T11:00:33.444807" elapsed="6.984121"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-07T11:00:40.429718" elapsed="0.398132"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-05-07T11:00:40.931607" level="INFO">Page title is 'OrangeHRM'.</msg>
+<arg>OrangeHRM</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-05-07T11:00:40.828245" elapsed="0.103546"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-05-07T11:00:40.932234" elapsed="0.209320"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>${t}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-05-07T11:00:41.142291" elapsed="0.000492"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-05-07T11:00:41.143291" level="INFO">${user} = "#$%&amp;/%</msg>
+<var>${user}</var>
+<arg>"#$%&amp;/%</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-05-07T11:00:41.143097" elapsed="0.000226"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-05-07T11:00:41.143709" level="INFO">${pass} = admin123</msg>
+<var>${pass}</var>
+<arg>admin123</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-05-07T11:00:41.143540" elapsed="0.000201"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-07T11:00:41.144252" level="INFO">Typing text '"#$%&amp;/%' into text field 'name=username'.</msg>
+<arg>name=username</arg>
+<arg>${user}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T11:00:41.144010" elapsed="0.336499"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-07T11:00:41.481220" level="INFO">Typing text 'admin123' into text field 'name=password'.</msg>
+<arg>name=password</arg>
+<arg>${pass}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T11:00:41.480957" elapsed="0.325192"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-07T11:00:41.807407" level="INFO">Clicking button '//button[normalize-space()='Login']'.</msg>
+<arg>//button[normalize-space()='Login']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T11:00:41.807005" elapsed="1.065368"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//div[@role='alert']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-05-07T11:00:42.872886" elapsed="0.322343"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Septimo error encontrado OK</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-05-07T11:00:43.195924" elapsed="0.000433"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Invalid credentials</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-05-07T11:00:43.196534" elapsed="0.106306"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Error esperado ok = Invalid credentials</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-05-07T11:00:43.303461" elapsed="0.000318"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-07T11:00:43.303971" elapsed="3.008008"/>
+</kw>
+<doc>Validando "#$% y password correcto</doc>
+<tag>login_siete</tag>
+<status status="PASS" start="2025-05-07T11:00:33.444483" elapsed="12.867886"/>
+</test>
+<test id="s1-s14-t8" name="Login ocho" line="164">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-07T11:00:46.313774" level="INFO">Opening browser 'firefox' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-07T11:00:46.313482" elapsed="7.278769"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-07T11:00:53.592760" elapsed="0.390061"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-05-07T11:00:54.086032" level="INFO">Page title is 'OrangeHRM'.</msg>
+<arg>OrangeHRM</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-05-07T11:00:53.983218" elapsed="0.103334"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-05-07T11:00:54.087169" elapsed="0.210354"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>${t}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-05-07T11:00:54.297980" elapsed="0.000230"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-05-07T11:00:54.298836" level="INFO">${user} = Admin</msg>
+<var>${user}</var>
+<arg>Admin</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-05-07T11:00:54.298564" elapsed="0.000321"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-05-07T11:00:54.299378" level="INFO">${pass} = admin123</msg>
+<var>${pass}</var>
+<arg>admin123</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-05-07T11:00:54.299178" elapsed="0.000241"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-07T11:00:54.299954" level="INFO">Typing text 'Admin' into text field 'name=username'.</msg>
+<arg>name=username</arg>
+<arg>${user}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T11:00:54.299674" elapsed="0.354830"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-07T11:00:54.655514" level="INFO">Typing text 'admin123' into text field 'name=password'.</msg>
+<arg>name=password</arg>
+<arg>${pass}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T11:00:54.654996" elapsed="0.328475"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-07T11:00:54.984572" level="INFO">Clicking button '//button[normalize-space()='Login']'.</msg>
+<arg>//button[normalize-space()='Login']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T11:00:54.984208" elapsed="1.397037"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//h6[normalize-space()='Dashboard']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-05-07T11:00:56.381675" elapsed="0.363598"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Dashboard</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-05-07T11:00:56.745745" elapsed="0.146992"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${\n}Login ocho :: Login Exitoso</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-05-07T11:00:56.893220" elapsed="0.000431"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-07T11:01:01.894718" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-07T11:00:56.893994" elapsed="5.000923"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-07T11:01:01.895360" elapsed="2.888473"/>
+</kw>
+<doc>Validando user ok y password correcto</doc>
+<tag>login_ocho</tag>
+<status status="PASS" start="2025-05-07T11:00:46.312935" elapsed="18.471460"/>
+</test>
+<doc>Practica validacion de Login</doc>
+<status status="FAIL" start="2025-05-07T10:58:37.469477" elapsed="147.315933"/>
+</suite>
+<suite id="s1-s15" name="Validaciones" source="F:\Documentos\WorkspaceRobotFramework\PyCharm\RobotFramework\Test_Case\Validaciones.robot">
+<test id="s1-s15-t1" name="Mi sexto Test" line="20">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-07T11:01:04.793832" level="INFO">https://demoqa.com/text-box firefox Rodrigo Prueba rodrigo@gmail.com direccion uno direccion dos</msg>
+<arg>${url} ${navegador} ${nombre} ${apellido} ${email} ${currentAddress} ${permanentAddress}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-07T11:01:04.793430" elapsed="0.000484"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-07T11:01:04.794871" level="INFO">Opening browser 'firefox' to base url 'https://demoqa.com/text-box'.</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-07T11:01:04.794523" elapsed="12.736009"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-07T11:01:17.531085" elapsed="0.402573"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-07T11:01:18.434915" level="INFO">Slept 500 milliseconds.</msg>
+<arg>${time}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-07T11:01:17.934209" elapsed="0.500951"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-05-07T11:01:18.435814" level="INFO">${validaName} = id=userName</msg>
+<var>${validaName}</var>
+<arg>id=userName</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-05-07T11:01:18.435567" elapsed="0.000285"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-05-07T11:01:18.675334" level="INFO">Element 'id=userName' is displayed.</msg>
+<arg>${validaName}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-05-07T11:01:18.436094" elapsed="0.239420"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-07T11:01:18.676449" level="INFO">Typing text 'Rodrigo Prueba' into text field 'id=userName'.</msg>
+<arg>id=userName</arg>
+<arg>${nombre} ${apellido}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T11:01:18.675957" elapsed="0.361287"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-05-07T11:01:19.040792" level="INFO">${validaEmail} = id=userEmail</msg>
+<var>${validaEmail}</var>
+<arg>id=userEmail</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-05-07T11:01:19.040412" elapsed="0.000431"/>
+</kw>
+<kw name="Element Should Be Enabled" owner="SeleniumLibrary">
+<arg>${validaEmail}</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-05-07T11:01:19.041084" elapsed="0.321147"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-07T11:01:19.363081" level="INFO">Typing text 'rodrigo@gmail.com' into text field 'id=userEmail'.</msg>
+<arg>id=userEmail</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T11:01:19.362838" elapsed="0.335831"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-07T11:01:19.699607" level="INFO">Typing text 'direccion uno' into text field 'id=currentAddress'.</msg>
+<arg>id=currentAddress</arg>
+<arg>${currentAddress}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T11:01:19.699114" elapsed="0.330588"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-05-07T11:01:20.030781" level="INFO">Executing JavaScript:
+window.scrollTo(0, 300)
+Without any arguments.</msg>
+<arg>window.scrollTo(0, 300)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-05-07T11:01:20.030176" elapsed="0.104658"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-07T11:01:20.636298" level="INFO">Slept 500 milliseconds.</msg>
+<arg>${time}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-07T11:01:20.135326" elapsed="0.501179"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-07T11:01:20.637442" level="INFO">Typing text 'direccion dos' into text field 'id=permanentAddress'.</msg>
+<arg>id=permanentAddress</arg>
+<arg>${permanentAddress}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T11:01:20.637113" elapsed="0.327923"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-07T11:01:20.965988" level="INFO">Clicking button 'id=submit'.</msg>
+<arg>id=submit</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T11:01:20.965654" elapsed="0.744346"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-07T11:01:22.211369" level="INFO">Slept 500 milliseconds.</msg>
+<arg>${time}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-07T11:01:21.710581" elapsed="0.500934"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-07T11:01:22.212012" elapsed="3.047683"/>
+</kw>
+<doc>Sexta prueba de validacion de campos visibles</doc>
+<tag>test_campos_visibles</tag>
+<status status="PASS" start="2025-05-07T11:01:04.792531" elapsed="20.467810"/>
+</test>
+<test id="s1-s15-t2" name="Mi septimo Test" line="41">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-05-07T11:01:25.262407" level="INFO">https://demoqa.com/text-box firefox Rodrigo Prueba rodrigo@gmail.com direccion uno direccion dos</msg>
+<arg>${url} ${navegador} ${nombre} ${apellido} ${email} ${currentAddress} ${permanentAddress}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-05-07T11:01:25.261757" elapsed="0.000758"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-07T11:01:25.263287" level="INFO">Opening browser 'firefox' to base url 'https://demoqa.com/text-box'.</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-07T11:01:25.262938" elapsed="14.309844"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-07T11:01:39.573367" elapsed="0.385839"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-07T11:01:40.460483" level="INFO">Slept 500 milliseconds.</msg>
+<arg>${time}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-07T11:01:39.959810" elapsed="0.500844"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-05-07T11:01:40.461422" level="INFO">${validaName} = id=userName</msg>
+<var>${validaName}</var>
+<arg>id=userName</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-05-07T11:01:40.461147" elapsed="0.000317"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-05-07T11:01:40.702657" level="INFO">Element 'id=userName' is displayed.</msg>
+<arg>${validaName}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2025-05-07T11:01:40.461863" elapsed="0.241095"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-07T11:01:40.704016" level="INFO">Typing text 'Rodrigo Prueba' into text field 'id=userName'.</msg>
+<arg>id=userName</arg>
+<arg>${nombre} ${apellido}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T11:01:40.703493" elapsed="0.378113"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-05-07T11:01:41.082419" level="INFO">${validaEmail} = id=userEmail</msg>
+<var>${validaEmail}</var>
+<arg>id=userEmail</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-05-07T11:01:41.082124" elapsed="0.000327"/>
+</kw>
+<kw name="Element Should Be Enabled" owner="SeleniumLibrary">
+<arg>${validaEmail}</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-05-07T11:01:41.082830" elapsed="0.323961"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-07T11:01:41.407781" level="INFO">Typing text 'rodrigo@gmail.com' into text field 'id=userEmail'.</msg>
+<arg>id=userEmail</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T11:01:41.407350" elapsed="0.334708"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-05-07T11:01:41.743735" level="INFO">${dir} = id=currentAddress</msg>
+<var>${dir}</var>
+<arg>id=currentAddress</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-05-07T11:01:41.743197" elapsed="0.000633"/>
+</kw>
+<kw name="Element Attribute Value Should Be" owner="SeleniumLibrary">
+<msg time="2025-05-07T11:01:41.964497" level="INFO">Element 'id=currentAddress' attribute 'placeholder' contains value 'Current Address'.</msg>
+<arg>${dir}</arg>
+<arg>placeholder</arg>
+<arg>Current Address</arg>
+<doc>Verifies element identified by ``locator`` contains expected attribute value.</doc>
+<status status="PASS" start="2025-05-07T11:01:41.744369" elapsed="0.220310"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-07T11:01:41.965564" level="INFO">Typing text 'direccion uno' into text field 'id=currentAddress'.</msg>
+<arg>id=currentAddress</arg>
+<arg>${currentAddress}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T11:01:41.965154" elapsed="0.330747"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-05-07T11:01:42.296935" level="INFO">Executing JavaScript:
+window.scrollTo(0, 300)
+Without any arguments.</msg>
+<arg>window.scrollTo(0, 300)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-05-07T11:01:42.296294" elapsed="0.105182"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-07T11:01:42.902547" level="INFO">Slept 500 milliseconds.</msg>
+<arg>${time}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-07T11:01:42.402110" elapsed="0.500571"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-07T11:01:42.903520" level="INFO">Typing text 'direccion dos' into text field 'id=permanentAddress'.</msg>
+<arg>id=permanentAddress</arg>
+<arg>${permanentAddress}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T11:01:42.903214" elapsed="0.327262"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-07T11:01:43.231134" level="INFO">Clicking button 'id=submit'.</msg>
+<arg>id=submit</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T11:01:43.230891" elapsed="0.747871"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-07T11:01:44.479738" level="INFO">Slept 500 milliseconds.</msg>
+<arg>${time}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-07T11:01:43.979257" elapsed="0.500711"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-07T11:01:44.480444" elapsed="3.147694"/>
+</kw>
+<doc>Septima prueba de validacion de campos por atributo</doc>
+<tag>test_valida_atributo_campo</tag>
+<status status="PASS" start="2025-05-07T11:01:25.260821" elapsed="22.367625"/>
+</test>
+<doc>Proyecto de pruebas para proyecto</doc>
+<status status="PASS" start="2025-05-07T11:01:04.786988" elapsed="42.842594"/>
+</suite>
+<status status="FAIL" start="2025-05-07T10:48:24.951334" elapsed="802.679949"/>
+</suite>
+<statistics>
+<total>
+<stat pass="25" fail="7" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">login_cinco</stat>
+<stat pass="0" fail="1" skip="0">login_cuatro</stat>
+<stat pass="1" fail="0" skip="0">login_dos</stat>
+<stat pass="1" fail="0" skip="0">login_ocho</stat>
+<stat pass="1" fail="0" skip="0">login_seis</stat>
+<stat pass="1" fail="0" skip="0">login_siete</stat>
+<stat pass="1" fail="0" skip="0">login_tres</stat>
+<stat pass="1" fail="0" skip="0">login_uno</stat>
+<stat pass="1" fail="0" skip="0">test_campos_visibles</stat>
+<stat pass="2" fail="0" skip="0">test_check_box</stat>
+<stat pass="1" fail="0" skip="0">test_chrome</stat>
+<stat pass="1" fail="0" skip="0">test_dos</stat>
+<stat pass="1" fail="0" skip="0">test_firefox</stat>
+<stat pass="1" fail="0" skip="0">test_frame</stat>
+<stat pass="1" fail="0" skip="0">test_handle_alert</stat>
+<stat pass="2" fail="0" skip="0">test_radio_button</stat>
+<stat pass="2" fail="0" skip="0">test_select</stat>
+<stat pass="1" fail="0" skip="0">test_titulo</stat>
+<stat pass="2" fail="2" skip="0">test_uno</stat>
+<stat pass="1" fail="0" skip="0">test_valida_atributo_campo</stat>
+<stat pass="1" fail="0" skip="0">test_variables</stat>
+<stat pass="1" fail="0" skip="0">test_variables_locales</stat>
+</tag>
+<suite>
+<stat name="Test Case" id="s1" pass="25" fail="7" skip="0">Test Case</stat>
+<stat name="Alertas" id="s1-s1" pass="1" fail="0" skip="0">Test Case.Alertas</stat>
+<stat name="Appium Android" id="s1-s2" pass="0" fail="1" skip="0">Test Case.Appium Android</stat>
+<stat name="Appium iOS" id="s1-s3" pass="0" fail="1" skip="0">Test Case.Appium iOS</stat>
+<stat name="Base" id="s1-s4" pass="0" fail="1" skip="0">Test Case.Base</stat>
+<stat name="Base For" id="s1-s5" pass="1" fail="0" skip="0">Test Case.Base For</stat>
+<stat name="Frame" id="s1-s6" pass="1" fail="0" skip="0">Test Case.Frame</stat>
+<stat name="Keywords" id="s1-s7" pass="1" fail="0" skip="0">Test Case.Keywords</stat>
+<stat name="Login Android" id="s1-s8" pass="0" fail="1" skip="0">Test Case.Login Android</stat>
+<stat name="Page Google" id="s1-s9" pass="0" fail="1" skip="0">Test Case.Page Google</stat>
+<stat name="Selectores" id="s1-s10" pass="3" fail="0" skip="0">Test Case.Selectores</stat>
+<stat name="Switch Browser" id="s1-s11" pass="1" fail="1" skip="0">Test Case.Switch Browser</stat>
+<stat name="Test uno" id="s1-s12" pass="5" fail="0" skip="0">Test Case.Test uno</stat>
+<stat name="Tiempos" id="s1-s13" pass="3" fail="0" skip="0">Test Case.Tiempos</stat>
+<stat name="Valida Login" id="s1-s14" pass="7" fail="1" skip="0">Test Case.Valida Login</stat>
+<stat name="Validaciones" id="s1-s15" pass="2" fail="0" skip="0">Test Case.Validaciones</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-05-07T10:49:00.819590" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002C6571B6E90&gt;: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión')': /wd/hub/session</msg>
+<msg time="2025-05-07T10:49:02.859621" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002C6571B7110&gt;: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión')': /wd/hub/session</msg>
+<msg time="2025-05-07T10:49:04.907106" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002C657163230&gt;: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión')': /wd/hub/session</msg>
+<msg time="2025-05-07T10:49:07.218472" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-05-07T10:49:07.234893" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002C657217AD0&gt;: Failed to establish a new connection: [WinError 10049] La dirección solicitada no es válida en este contexto')': /wd/hub/session</msg>
+<msg time="2025-05-07T10:49:07.237607" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002C6572AB8A0&gt;: Failed to establish a new connection: [WinError 10049] La dirección solicitada no es válida en este contexto')': /wd/hub/session</msg>
+<msg time="2025-05-07T10:49:07.241710" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002C6572ABCE0&gt;: Failed to establish a new connection: [WinError 10049] La dirección solicitada no es válida en este contexto')': /wd/hub/session</msg>
+<msg time="2025-05-07T10:49:07.250238" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-05-07T10:49:09.079119" level="WARN">The chromedriver version (134.0.6998.35) detected in PATH at C:\Python313\chromedriver.exe might not be compatible with the detected chrome version (135.0.7049.115); currently, chromedriver 135.0.7049.114 is recommended for chrome 135.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2025-05-07T10:49:22.178177" level="WARN">The chromedriver version (134.0.6998.35) detected in PATH at C:\Python313\chromedriver.exe might not be compatible with the detected chrome version (135.0.7049.115); currently, chromedriver 135.0.7049.114 is recommended for chrome 135.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2025-05-07T10:49:31.017764" level="WARN">The chromedriver version (134.0.6998.35) detected in PATH at C:\Python313\chromedriver.exe might not be compatible with the detected chrome version (135.0.7049.115); currently, chromedriver 135.0.7049.114 is recommended for chrome 135.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2025-05-07T10:49:35.870626" level="WARN">The chromedriver version (134.0.6998.35) detected in PATH at C:\Python313\chromedriver.exe might not be compatible with the detected chrome version (135.0.7049.115); currently, chromedriver 135.0.7049.114 is recommended for chrome 135.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2025-05-07T10:49:40.761523" level="WARN">The chromedriver version (134.0.6998.35) detected in PATH at C:\Python313\chromedriver.exe might not be compatible with the detected chrome version (135.0.7049.115); currently, chromedriver 135.0.7049.114 is recommended for chrome 135.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2025-05-07T10:49:47.152936" level="WARN">The chromedriver version (134.0.6998.35) detected in PATH at C:\Python313\chromedriver.exe might not be compatible with the detected chrome version (135.0.7049.115); currently, chromedriver 135.0.7049.114 is recommended for chrome 135.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2025-05-07T10:49:54.073336" level="WARN">The chromedriver version (134.0.6998.35) detected in PATH at C:\Python313\chromedriver.exe might not be compatible with the detected chrome version (135.0.7049.115); currently, chromedriver 135.0.7049.114 is recommended for chrome 135.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2025-05-07T10:51:29.178223" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002C6573AD150&gt;: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión')': /wd/hub/session</msg>
+<msg time="2025-05-07T10:51:31.230814" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002C6573AD9D0&gt;: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión')': /wd/hub/session</msg>
+<msg time="2025-05-07T10:51:33.281671" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002C6573AD260&gt;: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión')': /wd/hub/session</msg>
+<msg time="2025-05-07T10:51:35.345553" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-05-07T10:51:35.999736" level="WARN">The chromedriver version (134.0.6998.35) detected in PATH at C:\Python313\chromedriver.exe might not be compatible with the detected chrome version (135.0.7049.115); currently, chromedriver 135.0.7049.114 is recommended for chrome 135.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2025-05-07T10:53:48.006030" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002C6573AF790&gt;: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión')': /session/873c8a1f-c703-448b-aa84-0bc677d3a537/title</msg>
+<msg time="2025-05-07T10:53:52.103736" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002C6573AF9B0&gt;: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión')': /session/873c8a1f-c703-448b-aa84-0bc677d3a537/title</msg>
+<msg time="2025-05-07T10:53:56.192649" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002C6584746B0&gt;: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión')': /session/873c8a1f-c703-448b-aa84-0bc677d3a537/title</msg>
+<msg time="2025-05-07T10:54:04.368635" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002C658474C00&gt;: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión')': /session/873c8a1f-c703-448b-aa84-0bc677d3a537/screenshot</msg>
+<msg time="2025-05-07T10:54:08.436553" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002C658474E20&gt;: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión')': /session/873c8a1f-c703-448b-aa84-0bc677d3a537/screenshot</msg>
+<msg time="2025-05-07T10:54:12.524059" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002C658475040&gt;: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión')': /session/873c8a1f-c703-448b-aa84-0bc677d3a537/screenshot</msg>
+<msg time="2025-05-07T10:54:16.629867" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: HTTPConnectionPool(host='localhost', port=56805): Max retries exceeded with url: /session/873c8a1f-c703-448b-aa84-0bc677d3a537/screenshot (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002C658475260&gt;: Failed to establish a new connection: [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión'))</msg>
+<msg time="2025-05-07T10:55:48.832804" level="WARN">The chromedriver version (134.0.6998.35) detected in PATH at C:\Python313\chromedriver.exe might not be compatible with the detected chrome version (135.0.7049.115); currently, chromedriver 135.0.7049.114 is recommended for chrome 135.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>

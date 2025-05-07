@@ -1,0 +1,63 @@
+1746633882063	geckodriver	INFO	Listening on 127.0.0.1:60015
+1746633885107	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "60016" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\PC\\AppData\\Local\\Temp\\rust_mozprofile4Rp0vR"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1746633885435	Marionette	INFO	Marionette enabled
+1746633885555	Marionette	INFO	Listening on port 60026
+WebDriver BiDi listening on ws://127.0.0.1:60016
+Read port: 60026
+1746633885685	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://opensource-demo.orangehrmlive.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://opensource-demo.orangehrmlive.com."
+JavaScript warning: https://www.google.com/js/th/Qeqe9PKuIx0_qEnUum-f1ccoi0CPv1agKt5d9HKppzs.js, line 4557: unreachable code after return statement
+JavaScript warning: https://www.google.com/js/th/Qeqe9PKuIx0_qEnUum-f1ccoi0CPv1agKt5d9HKppzs.js, line 4557: unreachable code after return statement
+JavaScript warning: https://www.google.com/js/th/Qeqe9PKuIx0_qEnUum-f1ccoi0CPv1agKt5d9HKppzs.js, line 4557: unreachable code after return statement
+JavaScript warning: https://www.google.com/js/th/Qeqe9PKuIx0_qEnUum-f1ccoi0CPv1agKt5d9HKppzs.js, line 4557: unreachable code after return statement
+JavaScript warning: https://www.google.com/js/th/Qeqe9PKuIx0_qEnUum-f1ccoi0CPv1agKt5d9HKppzs.js, line 4557: unreachable code after return statement
+JavaScript warning: https://www.google.com/js/th/Qeqe9PKuIx0_qEnUum-f1ccoi0CPv1agKt5d9HKppzs.js line 2 > eval, line 4557: unreachable code after return statement
+JavaScript warning: https://www.google.com/js/th/Qeqe9PKuIx0_qEnUum-f1ccoi0CPv1agKt5d9HKppzs.js line 2 > eval, line 4557: unreachable code after return statement
+JavaScript warning: https://www.google.com/js/th/Qeqe9PKuIx0_qEnUum-f1ccoi0CPv1agKt5d9HKppzs.js line 2 > eval, line 4557: unreachable code after return statement
+JavaScript warning: https://www.google.com/js/th/Qeqe9PKuIx0_qEnUum-f1ccoi0CPv1agKt5d9HKppzs.js line 2 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.google.com/js/th/Qeqe9PKuIx0_qEnUum-f1ccoi0CPv1agKt5d9HKppzs.js line 2 > eval line 4557 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.google.com/js/th/Qeqe9PKuIx0_qEnUum-f1ccoi0CPv1agKt5d9HKppzs.js line 2 > eval line 4557 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.google.com/js/th/Qeqe9PKuIx0_qEnUum-f1ccoi0CPv1agKt5d9HKppzs.js line 2 > eval line 4557 > eval line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.google.com/js/th/Qeqe9PKuIx0_qEnUum-f1ccoi0CPv1agKt5d9HKppzs.js line 2 > eval line 4557 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.google.com/js/th/Qeqe9PKuIx0_qEnUum-f1ccoi0CPv1agKt5d9HKppzs.js line 2 > eval line 4557 > eval line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.google.com/js/th/Qeqe9PKuIx0_qEnUum-f1ccoi0CPv1agKt5d9HKppzs.js line 2 > eval, line 4557: unreachable code after return statement
+JavaScript warning: https://www.google.com/js/th/Qeqe9PKuIx0_qEnUum-f1ccoi0CPv1agKt5d9HKppzs.js line 2 > eval, line 4557: unreachable code after return statement
+JavaScript warning: https://www.google.com/js/th/Qeqe9PKuIx0_qEnUum-f1ccoi0CPv1agKt5d9HKppzs.js line 2 > eval line 4557 > eval line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.google.com/js/th/Qeqe9PKuIx0_qEnUum-f1ccoi0CPv1agKt5d9HKppzs.js line 2 > eval line 4557 > eval line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.google.com/js/th/Qeqe9PKuIx0_qEnUum-f1ccoi0CPv1agKt5d9HKppzs.js line 2 > eval line 4557 > eval line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.google.com/js/th/Qeqe9PKuIx0_qEnUum-f1ccoi0CPv1agKt5d9HKppzs.js line 2 > eval line 4557 > eval line 1 > eval line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.google.com/js/th/Qeqe9PKuIx0_qEnUum-f1ccoi0CPv1agKt5d9HKppzs.js line 2 > eval line 4557 > eval line 1 > eval line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.google.com/js/th/Qeqe9PKuIx0_qEnUum-f1ccoi0CPv1agKt5d9HKppzs.js line 2 > eval line 4557 > eval line 1 > eval line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.youtube.com/embed/J7I6C2tYNfo line 1267 > injectedScript, line 4024: unreachable code after return statement
+JavaScript warning: https://www.youtube.com/embed/J7I6C2tYNfo line 1267 > injectedScript, line 4024: unreachable code after return statement
+JavaScript warning: https://www.youtube.com/embed/J7I6C2tYNfo line 1267 > injectedScript, line 4024: unreachable code after return statement
+JavaScript warning: https://www.youtube.com/embed/J7I6C2tYNfo line 1267 > injectedScript, line 4024: unreachable code after return statement
+JavaScript warning: https://www.youtube.com/embed/J7I6C2tYNfo line 1267 > injectedScript, line 4024: unreachable code after return statement
+JavaScript warning: https://www.youtube.com/embed/J7I6C2tYNfo line 1267 > injectedScript line 2 > eval, line 4024: unreachable code after return statement
+JavaScript warning: https://www.youtube.com/embed/J7I6C2tYNfo line 1267 > injectedScript line 2 > eval, line 4024: unreachable code after return statement
+JavaScript warning: https://www.youtube.com/embed/J7I6C2tYNfo line 1267 > injectedScript line 2 > eval, line 4024: unreachable code after return statement
+JavaScript warning: https://www.youtube.com/embed/J7I6C2tYNfo line 1267 > injectedScript line 2 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.youtube.com/embed/J7I6C2tYNfo line 1267 > injectedScript line 2 > eval line 4024 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.youtube.com/embed/J7I6C2tYNfo line 1267 > injectedScript line 2 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.youtube.com/embed/J7I6C2tYNfo line 1267 > injectedScript line 2 > eval line 4024 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.youtube.com/embed/J7I6C2tYNfo line 1267 > injectedScript line 2 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.youtube.com/embed/J7I6C2tYNfo line 1267 > injectedScript line 2 > eval line 4024 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.youtube.com/embed/J7I6C2tYNfo line 1267 > injectedScript line 2 > eval, line 4024: unreachable code after return statement
+JavaScript warning: https://www.youtube.com/embed/J7I6C2tYNfo line 1267 > injectedScript line 2 > eval, line 4024: unreachable code after return statement
+JavaScript warning: https://www.youtube.com/embed/J7I6C2tYNfo line 1267 > injectedScript line 2 > eval line 4024 > eval line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.youtube.com/embed/J7I6C2tYNfo line 1267 > injectedScript line 2 > eval line 4024 > eval line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.youtube.com/embed/J7I6C2tYNfo line 1267 > injectedScript line 2 > eval line 4024 > eval line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.youtube.com/embed/J7I6C2tYNfo line 1267 > injectedScript line 2 > eval line 4024 > eval line 1 > eval line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.youtube.com/embed/J7I6C2tYNfo line 1267 > injectedScript line 2 > eval line 4024 > eval line 1 > eval line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.youtube.com/embed/J7I6C2tYNfo line 1267 > injectedScript line 2 > eval line 4024 > eval line 1 > eval line 1 > eval, line 1: unreachable code after return statement
+1746633896321	Marionette	INFO	Stopped listening on port 60026
+Dynamically enable window occlusion 1
+JavaScript warning: https://www.youtube.com/s/player/342e8dde/player_ias.vflset/es_MX/base.js, line 2552: Script terminated by timeout at:
+yW@https://www.youtube.com/s/player/342e8dde/player_ias.vflset/es_MX/base.js:2552:20
+@https://www.youtube.com/embed/J7I6C2tYNfo:4:496
+
+JavaScript warning: https://www.google.com/js/th/Qeqe9PKuIx0_qEnUum-f1ccoi0CPv1agKt5d9HKppzs.js line 2 > eval line 4557 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.

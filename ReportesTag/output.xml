@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.1 on win32)" generated="2025-05-07T11:04:41.219439" rpa="false" schemaversion="5">
+<suite id="s1" name="Valida Login" source="F:\Documentos\WorkspaceRobotFramework\PyCharm\RobotFramework\Test_Case\Valida_Login.robot">
+<test id="s1-t1" name="Login ocho" line="164">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-07T11:04:41.423139" level="INFO">Opening browser 'firefox' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<arg>${url}</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-07T11:04:41.422887" elapsed="7.062825"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-07T11:04:48.486235" elapsed="0.283815"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-05-07T11:04:48.773609" level="INFO">Page title is 'OrangeHRM'.</msg>
+<arg>OrangeHRM</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-05-07T11:04:48.770545" elapsed="0.003525"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-05-07T11:04:48.774799" elapsed="0.003067"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>${t}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-05-07T11:04:48.778239" elapsed="0.000459"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-05-07T11:04:48.779288" level="INFO">${user} = Admin</msg>
+<var>${user}</var>
+<arg>Admin</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-05-07T11:04:48.778990" elapsed="0.000348"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-05-07T11:04:48.779801" level="INFO">${pass} = admin123</msg>
+<var>${pass}</var>
+<arg>admin123</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-05-07T11:04:48.779595" elapsed="0.000245"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-07T11:04:48.780605" level="INFO">Typing text 'Admin' into text field 'name=username'.</msg>
+<arg>name=username</arg>
+<arg>${user}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T11:04:48.780091" elapsed="0.351503"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-07T11:04:49.132660" level="INFO">Typing text 'admin123' into text field 'name=password'.</msg>
+<arg>name=password</arg>
+<arg>${pass}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T11:04:49.132089" elapsed="0.334522"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-07T11:04:49.467768" level="INFO">Clicking button '//button[normalize-space()='Login']'.</msg>
+<arg>//button[normalize-space()='Login']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-07T11:04:49.467431" elapsed="1.393419"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//h6[normalize-space()='Dashboard']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-05-07T11:04:50.861374" elapsed="0.349003"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Dashboard</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-05-07T11:04:51.210707" elapsed="0.104109"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${\n}Login ocho :: Login Exitoso</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-05-07T11:04:51.315337" elapsed="0.000516"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-07T11:04:56.316909" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-07T11:04:51.316243" elapsed="5.001074"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-07T11:04:56.318769" elapsed="3.030652"/>
+</kw>
+<doc>Validando user ok y password correcto</doc>
+<tag>login_ocho</tag>
+<status status="PASS" start="2025-05-07T11:04:41.422125" elapsed="17.927809"/>
+</test>
+<doc>Practica validacion de Login</doc>
+<status status="PASS" start="2025-05-07T11:04:41.221121" elapsed="18.129870"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">login_ocho</stat>
+</tag>
+<suite>
+<stat name="Valida Login" id="s1" pass="1" fail="0" skip="0">Valida Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

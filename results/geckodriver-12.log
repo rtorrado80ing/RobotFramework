@@ -1,0 +1,35 @@
+1746633435952	geckodriver	INFO	Listening on 127.0.0.1:58518
+1746633439008	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58519" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\PC\\AppData\\Local\\Temp\\rust_mozprofileYANwoj"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1746633439323	Marionette	INFO	Marionette enabled
+1746633439432	Marionette	INFO	Listening on port 58534
+WebDriver BiDi listening on ws://127.0.0.1:58519
+Read port: 58534
+1746633439589	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.ad.plus/player/adplus.js, line 431: TypeError: c(...).setup is not a function
+JavaScript error: https://jsc.mgid.com/site/884765.js, line 22: SecurityError: The operation is insecure.
+JavaScript error: https://jsc.mgid.com/site/884765.js, line 22: SecurityError: The operation is insecure.
+JavaScript error: https://s0.2mdn.net/sadbundle/2169817654033476464/index.html?ev=01_253, line 236: TypeError: studio.Enabler is undefined
+JavaScript warning: https://pagead2.googlesyndication.com/bg/9upIlsdSlzZXG2sMSxOkhCgMP3orW_MNEdJuRkFEMXo.js line 2 > eval line 6489 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/9upIlsdSlzZXG2sMSxOkhCgMP3orW_MNEdJuRkFEMXo.js line 2 > eval line 2484 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/9upIlsdSlzZXG2sMSxOkhCgMP3orW_MNEdJuRkFEMXo.js line 2 > eval line 5897 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1746633453602	Marionette	INFO	Stopped listening on port 58534
+Dynamically enable window occlusion 1
+JavaScript warning: https://imasdk.googleapis.com/formats/outstream/versioned/prod2/outstream_web_client_20250428_RC00/outstream.min.js, line 547: Script terminated by timeout at:
+DF/a.g<@https://imasdk.googleapis.com/formats/outstream/versioned/prod2/outstream_web_client_20250428_RC00/outstream.min.js:547:514
+
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=G-MVRXK93D28&l=dataLayer&cx=c&gtm=45He5551v855226469za200&tag_exp=101509156~103101750~103101752~103116026~103200004~103231718~103231720~103233424~103251618~103251620~103252644~103252646~103284320~103284322, line 749: Script terminated by timeout at:
+k.fj@https://www.googletagmanager.com/gtag/js?id=G-MVRXK93D28&l=dataLayer&cx=c&gtm=45He5551v855226469za200&tag_exp=101509156~103101750~103101752~103116026~103200004~103231718~103231720~103233424~103251618~103251620~103252644~103252646~103284320~103284322:749:30
+get@https://www.googletagmanager.com/gtag/js?id=G-MVRXK93D28&l=dataLayer&cx=c&gtm=45He5551v855226469za200&tag_exp=101509156~103101750~103101752~103116026~103200004~103231718~103231720~103233424~103251618~103251620~103252644~103252646~103284320~103284322:747:119
+stop@https://www.googletagmanager.com/gtag/js?id=G-MVRXK93D28&l=dataLayer&cx=c&gtm=45He5551v855226469za200&tag_exp=101509156~103101750~103101752~103116026~103200004~103231718~103231720~103233424~103251618~103251620~103252644~103252646~103284320~103284322:747:87
+k.Dn/c/<@https://www.googletagmanager.com/gtag/js?id=G-MVRXK93D28&l=dataLayer&cx=c&gtm=45He5551v855226469za200&tag_exp=101509156~103101750~103101752~103116026~103200004~103231718~103231720~103233424~103251618~103251620~103252644~103252646~103284320~103284322:747:410
+
+JavaScript warning: https://gum.criteo.com/syncframe?origin=publishertagids&topUrl=demoqa.com#{%22bundle%22:{%22origin%22:0},%22optout%22:{%22value%22:false,%22origin%22:0},%22tld%22:%22demoqa.com%22,%22topUrl%22:%22demoqa.com%22,%22version%22:160,%22origin%22:%22publishertagids%22,%22requestId%22:%220.42316035497134497%22}, line 13: Script terminated by timeout at:
+r.prototype.flushEventQueue@https://gum.criteo.com/syncframe?origin=publishertagids&topUrl=demoqa.com#{%22bundle%22:{%22origin%22:0},%22optout%22:{%22value%22:false,%22origin%22:0},%22tld%22:%22demoqa.com%22,%22topUrl%22:%22demoqa.com%22,%22version%22:160,%22origin%22:%22publishertagids%22,%22requestId%22:%220.42316035497134497%22}:13:3137
+r/<@https://gum.criteo.com/syncframe?origin=publishertagids&topUrl=demoqa.com#{%22bundle%22:{%22origin%22:0},%22optout%22:{%22value%22:false,%22origin%22:0},%22tld%22:%22demoqa.com%22,%22topUrl%22:%22demoqa.com%22,%22version%22:160,%22origin%22:%22publishertagids%22,%22requestId%22:%220.42316035497134497%22}:13:3642
+
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
