@@ -1,0 +1,21 @@
+1745355950242	geckodriver	INFO	Listening on 127.0.0.1:59893
+1745355953378	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "59894" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\PC\\AppData\\Local\\Temp\\rust_mozprofileio0QnM"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1745355953812	Marionette	INFO	Marionette enabled
+1745355953941	Marionette	INFO	Listening on port 59904
+WebDriver BiDi listening on ws://127.0.0.1:59894
+Read port: 59904
+1745355954083	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://cdn.ad.plus/player/adplus.js, line 431: TypeError: c(...).setup is not a function
+JavaScript warning: https://pagead2.googlesyndication.com/bg/EkdjyKrF1NmAsk7REIAGOde1tWhmsx7zcO2hk2jj3tw.js line 2 > eval line 3398 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/EkdjyKrF1NmAsk7REIAGOde1tWhmsx7zcO2hk2jj3tw.js line 2 > eval line 2366 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://jsc.mgid.com/site/884765.js, line 22: SecurityError: The operation is insecure.
+JavaScript error: https://jsc.mgid.com/site/884765.js, line 22: SecurityError: The operation is insecure.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/EkdjyKrF1NmAsk7REIAGOde1tWhmsx7zcO2hk2jj3tw.js line 2 > eval line 6767 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1745355967849	Marionette	INFO	Stopped listening on port 59904
+Dynamically enable window occlusion 1
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
