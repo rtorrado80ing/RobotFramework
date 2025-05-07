@@ -1,3 +1,7 @@
+#Para subir solo uno
+#appium -ka 800 --base-path=/wd/hub
+#Activando el log para mas detalle
+#appium -ka 800 --log-level debug --base-path=/wd/hub
 #Para correr pruebas en 2 dispositivos/emuladores en paralelo, haz lo siguiente
 #Abre 2 terminales separadas y ejecuta:
 #Para el primer dispositivo (puerto 8201):
@@ -6,6 +10,8 @@
 #appium --port 4725 --default-capabilities "{ \"adbPort\":5038, \"systemPort\":8202, \"newCommandTimeout\":0, \"automationName\":\"UiAutomator2\", \"deviceName\":\"emulator-5556\" }"
 #en Mac y ejecuta
 #appium --default-capabilities '{"adbPort":5037,"systemPort":8201,"newCommandTimeout":0,"automationName":"UiAutomator2"}'
+#Para ejecutar el caso
+#robot -d ReporteAppium  Test_Case/Appium_A*.robot
 
 *** Settings ***
 Library    AppiumLibrary    run_on_failure=Capture Page Screenshot
