@@ -1,3 +1,9 @@
+#Para subir solo uno
+#appium -ka 800 --base-path=/wd/hub
+#Activando el log para mas detalle
+#appium -ka 800 --log-level debug --base-path=/wd/hub
+#Para ejecutar el caso
+#robot -d ReporteAppium  Test_Case/Login_Android.robot
 *** Settings ***
 Library     AppiumLibrary
 Resource    ../Resources/android-res.robot
